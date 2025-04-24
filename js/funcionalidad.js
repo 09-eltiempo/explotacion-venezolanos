@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?80';
+const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?865460';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -85,13 +85,13 @@ redesSociales.innerHTML = `
 					`
 					<div class="hexagono1" id= "autor${i}" data-aos="fade-up-left" data-aos-duration="1500">
 						<figure>
-							<p class="titular_hexagono">${myData.autores[i].titulo}</p>
+							<h2 class="titular_hexagono">${myData.autores[i].titulo}</h2>
 							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-titular.svg" class="hexagonos frontal   hexagono-resposive-frontal">
 							<div class="dejar-estatico trasera">
 								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-autor.svg" class="hexagonos frontal hexagono-resposive-atras">
 								<div class="contenido_informacion">
 									<center><img src="${myData.autores[i].foto}" class="hexagonos frontal imagen-autor"></center>
-									<h2 class="Nombre-Autor">${myData.autores[i].nombre}</h2>
+									<h3 class="Nombre-Autor">${myData.autores[i].nombre}</h3>
 									<p class="descripcion_articulo">${myData.autores[i].descripcion}</p>
 									<div id="${i}" class="verMas">
 										<hr class="linea-divisora">

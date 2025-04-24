@@ -193,7 +193,7 @@ figure .trasera{
 
 .seccion {
     width: 600px;
-    margin: auto;
+    margin: 258px auto 0px auto;
     display: table;
 }
 
@@ -243,6 +243,7 @@ figure .trasera{
     align-items: center;
     position: relative;
     float: left;
+    top: 0;
 }
 .footer-mobile{
   display: none;
@@ -300,52 +301,56 @@ figure .trasera{
     background-color: #000;
 }
 .contenedor_seccion {
-
     width: 1200px;
     display: table;
     position: relative;
-    margin-top: 135px;
+    margin-top: 81px;
 }
-
 .dejar-estatico{
 
   -webkit-transform: perspective(600px) rotateY(180deg);
 }
 #autor0 {
     position: absolute;
-    left: 0;
-    top: 127px;
+    left: 449px;
+    top: 1px;
 }
 #autor3 {
     position: absolute;
-    right: 5px;
-    top: 127px;
+    left: 0px;
+    top: 388px;
 }
 #autor6 {
     position: absolute;
-    top: 516px;
-    left: 0px;
-}
-#autor9 {
-    position: absolute;
-    top: 516px;
+    top: 388px;
     right: 5px;
 }
-#autor12 {
+
+#autor7 {
     position: absolute;
-    left: 0;
-    top: 902px;
+    left: 2px;
+    top: 774px;
 }
-#autor15 {
+
+#autor10 {
     position: absolute;
-    right: 5px;
-    top: 902px;
+    right: 7px;
+    top: 773px;
 }
+
+
 #autor16 {
     position: absolute;
-    left: 0;
-    top: 1290px;
+    right: 5px;
+    top: 1157px;
 }
+
+#autor13 {
+    position: absolute;
+    left: 0;
+    top: 1163px;
+}
+
 #autor19 {
     position: absolute;
     right: 5px;
@@ -640,11 +645,7 @@ figure {
     height: 236px;
 }
 
-#autor29 {
-    position: absolute;
-    right: 11px;
-    top: 1864px;
-}
+
 
 .titular_hexagono {
 
@@ -658,53 +659,84 @@ figure {
     text-align: center;
 }
 
-#autor9 {
+#autor0 {
     position: absolute;
-    top: 465px;
-    right: 11px;
+    left: 415px;
+    top: 1px;
 }
 
-#autor6 {
-    position: absolute;
-    top: 467px;
-    left: 11px;
-}
+    #autor3 {
+        position: absolute;
+        left: 11px;
+        top: 353px;
+    }
 
-#autor12 {
-    position: absolute;
-    left: 0;
-    top: 814px;
-}
+    #autor6 {
+        position: absolute;
+        top: 353px;
+        right: 10px;
+    }
 
-#autor15 {
-    position: absolute;
-    right: 5px;
-    top: 814px;
-}
+    #autor7 {
+        position: absolute;
+        left: 11px;
+        top: 701px;
+    }
+
+#autor10 {
+        position: absolute;
+        right: 10px;
+        top: 701px;
+    }
+
+
+    #autor16 {
+        right: 10px;
+        position: absolute;
+        top: 1052px;
+    }
+
+    #autor13 {
+        position: absolute;
+        top: 1052px;
+        left: 11px;
+    }
 
 #autor19 {
     position: absolute;
-    right: 11px;
-    top: 1165px;
+    right: 5px;
+    top: 1290px;
 }
-
-#autor16 {
-    position: absolute;
-    left: 11px;
-    top: 1165px;
-}
-
-#autor25 {
-    position: absolute;
-    right: 11px;
-    top: 1514px;
-}
-
 #autor22 {
     position: absolute;
-    left: 10px;
-    top: 1514px;
+    left: 0;
+    top: 1682px;
 }
+#autor25 {
+    position: absolute;
+    right: 5px;
+    top: 1682px;
+}
+#autor26 {
+    position: absolute;
+    left: 0;
+    top: 2064px;
+}
+#autor29 {
+    position: absolute;
+    right: 5px;
+    top: 2064px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .hexagono1 {
     width: 270px;
@@ -722,11 +754,12 @@ figure {
     margin: 100px auto 20px auto;
 }
 
-.seccion {
-    width: 540px;
-    margin: auto;
-    display: table;
-}
+
+    .seccion {
+        width: 540px;
+        display: table;
+        margin: 235px auto 0px auto;
+    }
 
 .descripcion {
     width: 506px;
