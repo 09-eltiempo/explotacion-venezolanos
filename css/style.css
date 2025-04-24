@@ -214,16 +214,17 @@ figure .trasera{
     width: 300px;
 }
 .titular_hexagono {
-
     font-family: aglet-slab, sans-serif;
     font-style: normal;
     font-weight: 300;
     position: absolute;
-    font-size: 29px;
-    padding: 0px 60px;
-    line-height: 28px;
+    font-size: 26px;
+    padding: 0px 55px;
+    line-height: 31px;
     margin: auto;
     text-align: center;
+    left: 0;
+    right: 0;
 }
 .verMas {
     position: relative;
@@ -647,17 +648,16 @@ figure {
 
 
 
-.titular_hexagono {
-
-    font-family: aglet-slab, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    padding: 0px 46px;
-    line-height: 26px;
-    margin: auto;
-    text-align: center;
-}
+    .titular_hexagono {
+        font-family: aglet-slab, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        padding: 0px 46px;
+        line-height: 27px;
+        margin: auto;
+        text-align: center;
+    }
 
 #autor0 {
     position: absolute;
