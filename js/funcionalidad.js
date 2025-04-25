@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 
-
 const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?06664567k';
 let contenido = document.querySelector(".seccion");
 
@@ -106,6 +105,8 @@ redesSociales.innerHTML = `
 					`
 			contenido.innerHTML += hexagono;
 
+
+
 			if($(window).width() < '600') {
 			
 				var  frontal = $(".hexagono-resposive-frontal");
@@ -116,99 +117,168 @@ redesSociales.innerHTML = `
 			
 			$(".verMas").click(function(e) {
 				let id = $(this).attr('id');//console.log(id)
+				console.log("posicion: " + id)
+
+
+
+				//guardar local storage
+				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
+				clicks.push(id);
+				localStorage.setItem('posicionNota', JSON.stringify(clicks));
+
+
+
 				let elemento = document.getElementById(id);//cojer el div
+
 				let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
 				//var elemento = $(this).addClass("carlos");
 				padre.classList.add('dejar-estatico');
 				console.log(padre);
 
-				ilustracion_movile.style.marginTop = '0px';
-				contenido_principal.style.display = "none";
-				body.classList.add('fondo_body');
-				contenido_articulo.style.display  = "block";
-
-				var elmnt = document.querySelector(".base-articulo-completo");
-					var x = elmnt.scrollLeft;
-					var y = elmnt.scrollTop = 0;
-					console.log(y);
 				
 
-				if($(window).width() < '600') {
-  					
-				  	setTimeout(function(){
-						divisor.style.opacity = "1";
-					}, 1200)
+				if(id == 0){
+
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota1.html", "_blank");
+					
+				}else if(id == 2){
+
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota3.html", "_blank");
+
+				}else if(id == 4){
+
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota5.html", "_blank");
+
+				}else if(id == 6){
+
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota7.html", "_blank");
+
+				}else{
+
+
+					
+
+					ilustracion_movile.style.marginTop = '0px';
+					contenido_principal.style.display = "none";
+					body.classList.add('fondo_body');
+
+					
+					contenido_articulo.style.display  = "block";
+
+					var elmnt = document.querySelector(".base-articulo-completo");
+						var x = elmnt.scrollLeft;
+						var y = elmnt.scrollTop = 0;
+						//console.log(y);
+					
+
+					if($(window).width() < '600') {
+	  					
+					  	setTimeout(function(){
+							divisor.style.opacity = "1";
+						}, 1200)
+					}
+
+					for(let i=0; i< myData.autores.length; i++){
+
+						if(id == myData.autores[i].id){
+							//console.log(id);
+							//console.log(padre);
+							imagenInicio.src       =  myData.autores[i].imagenNota;
+							imagenInicio2.src      =  myData.autores[i].imagenNota;
+							titulo.innerHTML       =  myData.autores[i].tituloNota;
+							autor.innerHTML        =  myData.autores[i].nombre;
+							descripcion.innerHTML  =  myData.autores[i].descripcion;
+							articulo.innerHTML     =  ` 
+
+							<div class="base_textos esconder_desktop" id="titulo">
+								<h1 class="titulo_articulo">${myData.autores[i].titulo}</h1>
+								<h2 class="autor ancho_caja">${myData.autores[i].nombre}</h2>
+								<p class="descripcion2 ancho_caja">${myData.autores[i].descripcion}</p>
+							</div>
+
+							<p class="sumarioNota">${myData.autores[i].sumarioNota} </p>
+
+							<hr class="linea_divisora_interna"/>
+
+							${myData.autores[i].articulo} 
+
+														<div class="centrar_redes bajar_redes_z">
+															<hr class="linea_divisora_red">
+															<div class="contenido_redes_sociales redes_mobile">
+																<a href="https://www.facebook.com/eltiempo/" target="blank">
+																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
+																</a>
+																<a href="https://twitter.com/ELTIEMPO" target="blank">
+																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
+																</a>
+																<a href="#"><img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile"></a>
+																
+																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">
+																<div class="red_adicional">
+																	<a href="https://twitter.com/ELTIEMPO" target="blank">
+																		<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt=""  class="icono_redes redes_movile  left_movile">
+																	</a>
+
+																	<a href="https://twitter.com/ELTIEMPO" target="blank">
+																		<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg"   alt="" class="icono_redes redes_movile  left_movile">
+																	</a>
+																</div>
+																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/flecha_atras.png"   class="icono_redes flecha_atras redes_movile">
+															</div>
+														</div>	`;
+
+							let puntos = document.querySelector(".puntos2");
+							puntos.addEventListener("click", function(){
+								document.querySelector(".red_adicional").style.display = "block";
+								document.querySelector(".flecha_atras").style.display  = "block";
+								puntos.style.display = "none";
+							});
+
+							let ocultar = document.querySelector(".flecha_atras");
+							ocultar.addEventListener("click", function(){
+								puntos.style.display = "block";
+								document.querySelector(".red_adicional").style.display = "none";
+								document.querySelector(".flecha_atras").style.display  = "none";
+							});
+
+						}
+						
+					}/*---fin for--*/
 				}
 
-				for(let i=0; i< myData.autores.length; i++){
-
-					if(id == myData.autores[i].id){
-						//console.log(id);
-						//console.log(padre);
-						imagenInicio.src       =  myData.autores[i].imagenNota;
-						imagenInicio2.src      =  myData.autores[i].imagenNota;
-						titulo.innerHTML       =  myData.autores[i].tituloNota;
-						autor.innerHTML        =  myData.autores[i].nombre;
-						descripcion.innerHTML  =  myData.autores[i].descripcion;
-						articulo.innerHTML     =  ` 
-
-						<div class="base_textos esconder_desktop" id="titulo">
-							<h1 class="titulo_articulo">${myData.autores[i].titulo}</h1>
-							<h2 class="autor ancho_caja">${myData.autores[i].nombre}</h2>
-							<p class="descripcion2 ancho_caja">${myData.autores[i].descripcion}</p>
-						</div>
-
-						${myData.autores[i].articulo}
-
-													<div class="centrar_redes bajar_redes_z">
-														<hr class="linea_divisora_red">
-														<div class="contenido_redes_sociales redes_mobile">
-															<a href="https://www.facebook.com/eltiempo/" target="blank">
-																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
-															</a>
-															<a href="https://twitter.com/ELTIEMPO" target="blank">
-																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
-															</a>
-															<a href="#"><img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile"></a>
-															
-															<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">
-															<div class="red_adicional">
-																<a href="https://twitter.com/ELTIEMPO" target="blank">
-																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt=""  class="icono_redes redes_movile  left_movile">
-																</a>
-
-																<a href="https://twitter.com/ELTIEMPO" target="blank">
-																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg"   alt="" class="icono_redes redes_movile  left_movile">
-																</a>
-															</div>
-															<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/flecha_atras.png"   class="icono_redes flecha_atras redes_movile">
-														</div>
-													</div>	`;
-
-						let puntos = document.querySelector(".puntos2");
-						puntos.addEventListener("click", function(){
-							document.querySelector(".red_adicional").style.display = "block";
-							document.querySelector(".flecha_atras").style.display  = "block";
-							puntos.style.display = "none";
-						});
-
-						let ocultar = document.querySelector(".flecha_atras");
-						ocultar.addEventListener("click", function(){
-							puntos.style.display = "block";
-							document.querySelector(".red_adicional").style.display = "none";
-							document.querySelector(".flecha_atras").style.display  = "none";
-						});
-
-					}
-					
-				}/*---fin for--*/
+				
 					
 			});/*--fin click-*/
 			
 
 		}
 
+
+		//LOCAL STORAGE CARGA
+		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
+		//console.log(clicks[0]);
+
+		
+		$(`#0`).parent().parent().parent().addClass('dejar-estatico')
+
+		for(let i = 0; i < clicks.length; i++){
+
+			console.log(clicks[i])
+			$(`#${ clicks[i] }`).parent().parent().parent().addClass('dejar-estatico')
+		}
+		//LOCAL STORAGE CARGA
+
+
+			
+
 	})
+	
+
+
+
+	
+
+
 
 	cerrar.addEventListener("click", function(){
 		contenido_principal.style.display = "block";

@@ -59,14 +59,14 @@
 
 
 .parrafo_nota {
-    font-family: "aglet-slab";
-    font-style: normal;
-    font-weight: 300;
-    font-stretch: normal;
-    font-size: 21px;
+    font-size: 19px;
     line-height: 29px;
     color: #000;
     margin-bottom: 26px;
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
 }
 
 .base_autor {
