@@ -1,0 +1,160 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFC95C;
+}
+
+.base_imagen_sumario{
+
+    width: 100%;
+    max-width: 622px;
+    display: table;
+    margin: 100px auto 0px auto;
+}
+
+.contenedor_texto{
+
+	width: 100%;
+    max-width: 622px;
+    display: table;
+    margin:auto;
+}
+
+.imagen_portada_nota {
+    width: 100%;
+    margin: 0px auto 50px auto;
+}
+
+.titulo_nota {
+    font-family: "aglet-slab";
+    font-weight: 700;
+    font-stretch: normal;
+    font-size: 29px;
+    text-align: center;
+    color: #000000;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+
+
+.linea_divisora {
+    width: 97%;
+    height: 2px;
+    background-color: #000;
+    border: none;
+    margin: 0px auto 24px auto;
+}
+
+.sumario_nota {
+    font-family: "aglet-slab";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: normal;
+    text-align: center;
+    margin-bottom: 67px;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+
+.parrafo_nota {
+    font-family: "aglet-slab";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 21px;
+    line-height: 29px;
+    color: #000;
+    margin-bottom: 26px;
+}
+
+.base_autor{
+
+	width: 100%;
+	display: table;
+	margin-bottom: 50px;
+}
+
+.parrafo_autor {
+    font-family: "aglet-slab";
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-bottom: 10px;
+   
+}
+
+.contenido_redes_sociales {
+    width: auto;
+    display: table;
+    margin: 87px auto 128px auto;
+    position: relative;
+    border-top: 1px solid #000;
+    padding-top: 12px;
+}
+
+.icono_redes{
+    width: 31px;
+    margin-left: 14px;
+    transition: transform .2s;
+    max-width: inherit;
+    cursor: pointer;
+}
+
+.icono_redes:hover{
+
+	transform: scale(0.9);
+}
+
+.redes_desplegable {
+    display: none;
+    position: absolute;
+    width: 30px;
+    left: 144px;
+    top: 38px;
+    background-color: #ffc95c;
+    padding-top: 5px;
+}
+
+.redes_desplegable .icono_redes {
+    margin-left: 0px;
+}
+
+.contenido_redes_sociales a{
+    text-decoration: none;
+}
+
+.quitar_espacio{
+
+	margin-left: 0px;
+}
+
+.base_icono_cerrar{
+
+	width: auto;
+	margin: 0px auto 100px auto;
+	display: table;
+}
+
+.icono_cerrar {
+
+    width: 52px;
+    margin: auto;
+    cursor: pointer;
+    animation: 1.1s infinite alternate slidein;
+}
+
+
+@keyframes slidein{
+
+	0% {
+	    transform: perspective(600px) rotateY(0deg);
+	}
+
+	100% {
+    	transform: perspective(600px) rotateY(180deg);
+	}
+}
