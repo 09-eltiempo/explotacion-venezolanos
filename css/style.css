@@ -88,6 +88,106 @@ figure{
     align-items: center;
 }
 
+.contenedor_articulo{
+
+    width: 100%;
+    max-width: 638px;
+    margin: auto;
+    display: table;
+}
+
+.flecha_abajo {
+    width: 14px;
+    margin-right: 5px;
+}
+
+.linea_divisora {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border: none;
+    margin: 20px 0px;
+}
+
+
+#articulo_VerMas{
+
+    display: none;
+}
+
+.magen_migrantes_lts{
+
+    width: 100%;
+}
+
+.base_divisor_ver_mas {
+    width: 100%;
+    display: table;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.boton_ver_mas, .boton_ver_menos {
+    position: absolute;
+    top: 4px;
+    background-color: #ffc95c;
+    padding: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    font-family: "aglet-slab";
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.boton_ver_mas:hover{
+    transform: scale(0.9);
+}
+
+.boton_ver_menos:hover{
+    transform: scale(0.9);
+}
+
+.ancla{
+
+    text-decoration: none;
+}
+
+.base_video_notaP {
+    width: 100%;
+    max-width: 1000px;
+    display: table;
+    margin: 40px auto;
+}
+
+.contenedor_grafico_NP {
+    width: 100%;
+    display: table;
+    margin: 40px 0px;
+}
+
+.imagen_migrantes_lts {
+    width: 100%;
+}
+
+.parrafo_notaP {
+    position: relative;
+    font-family: 'KohinoorTelugu-Light';
+    font-size: 18px;
+    /* width: 523px; */
+    margin: 0px auto 13px auto;
+    display: block;
+}
+
+.video_youtube_notaP{
+
+    width: 100%;
+    height: 600px;
+}
+
 figure .frontal, figure .trasera{
   transition: all ease .5s;
   cursor: pointer;
@@ -121,6 +221,14 @@ figure .trasera {
   /*transform-style: preserve-3d;*/
 }
 
+.contenedor_nota_principal {
+    width: 100%;
+    max-width: 1000px;
+    /* background-color: red; */
+    display: table;
+    margin: auto;
+}
+
 .dejar-estatico .trasera{
   z-index: 1;
 
@@ -128,7 +236,7 @@ figure .trasera {
 .base_imagen_movile.ilustracion_desktop {
     width: 100%;
     display: table;
-    background-color: #7ed4d8;
+    background-color: #ffc95c;
     position: relative;
     z-index: 90;
 }
@@ -151,7 +259,7 @@ figure .trasera {
 }
 .centrar_redes {
     width: auto;
-    margin: auto;
+    margin: 9px auto 62px auto;
     display: table;
 }
 .ilustracion_movile{
@@ -410,9 +518,8 @@ figure .trasera {
 }
 /*---------------------------PANTALLA ARTICULO--------------------------------*/
 
-.fondo_body{
-
-    background-color: #7ED4D8;
+.fondo_body {
+    background-color: #FFC95C;
     overflow-y: hidden;
 }
 .contenido_articulo{

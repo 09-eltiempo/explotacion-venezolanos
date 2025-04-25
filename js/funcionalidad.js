@@ -227,6 +227,31 @@ redesSociales.innerHTML = `
 
 
 
+$(".boton_ver_mas").click(function(event) {
+	
+	$("#articulo_VerMas").slideDown(400);
+	$("#verMarBtn").css('display', 'none');
+
+	$("#verMenosBtn").css('display', 'table');
+
+});
+
+
+$(".boton_ver_menos").click(function(event) {
+
+	$("#articulo_VerMas").slideUp(400);
+	$("#verMarBtn").css('display', 'table');
+
+	$("#verMenosBtn").css('display', 'none');
+
+
+	
+
+});
+
+
+
+
 
 
   	
