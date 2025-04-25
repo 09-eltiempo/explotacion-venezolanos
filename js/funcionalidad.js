@@ -6,7 +6,7 @@ const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_v
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
-let descripcionInicial = document.querySelector(".descripcion").innerHTML = "TREINTA EXPERTOS DE DIFERENTES ÁREAS COMPARTIERON CON EL TIEMPO SU VISIÓN DE LO QUE ESTAMOS VIVIENDO Y LO QUE VIENE DESPUÉS DEL CORONAVIRUS.";
+let descripcionInicial = document.querySelector(".descripcion").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu pretium nunc. Aenean suscipit elementum tempor. Mauris luctus nisi nec nisl imperdiet, tempor pharetra magna tempor. Pellentesque fringilla justo vel vestibulum pretium. Vivamus fringilla massa id neque faucibus ultrices.";
 
 /*-------------contenidos-------------*/
 let contenido_principal = document.querySelector(".contenido_principal");
@@ -88,9 +88,9 @@ redesSociales.innerHTML = `
 					<div class="hexagono1" id= "autor${i}" data-aos="fade-up-left" data-aos-duration="1500">
 						<figure>
 							<h2 class="titular_hexagono">${myData.autores[i].titulo}</h2>
-							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-titular.svg" class="hexagonos frontal   hexagono-resposive-frontal">
+							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-titular-5.svg?56" class="hexagonos frontal   hexagono-resposive-frontal">
 							<div class="dejar-estatico trasera">
-								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-autor.svg" class="hexagonos frontal hexagono-resposive-atras">
+								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56" class="hexagonos frontal hexagono-resposive-atras">
 								<div class="contenido_informacion">
 									<center><img src="${myData.autores[i].foto}" class="hexagonos frontal imagen-autor"></center>
 									<h3 class="Nombre-Autor">${myData.autores[i].nombre}</h3>
