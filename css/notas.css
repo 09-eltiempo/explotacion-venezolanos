@@ -69,11 +69,10 @@
     margin-bottom: 26px;
 }
 
-.base_autor{
-
-	width: 100%;
-	display: table;
-	margin-bottom: 50px;
+.base_autor {
+    width: 100%;
+    display: table;
+    margin: 86px auto 50px auto;
 }
 
 .parrafo_autor {
@@ -147,6 +146,24 @@
     animation: 1.1s infinite alternate slidein;
 }
 
+
+.cargo_autor {
+    font-family: "aglet-slab";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #000;
+    font-size: 15px;
+}
+
+.subtitulo_nota {
+    font-family: "aglet-slab";
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    margin: 42px 0px 23px 0px;
+    font-size: 21px;
+}
 
 @keyframes slidein{
 
