@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?06kk77k';
+const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?06664567k';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -69,6 +69,8 @@ redesSociales.innerHTML = `
 					setTimeout(function(){
 						$(".icono_redes").removeAttr('data-aos');
 					}, 3000)
+
+				
 					
 /*---------fin redes----*/
 /*---llamado de data----*/
@@ -145,7 +147,7 @@ redesSociales.innerHTML = `
 						//console.log(padre);
 						imagenInicio.src       =  myData.autores[i].imagenNota;
 						imagenInicio2.src      =  myData.autores[i].imagenNota;
-						titulo.innerHTML       =  myData.autores[i].titulo;
+						titulo.innerHTML       =  myData.autores[i].tituloNota;
 						autor.innerHTML        =  myData.autores[i].nombre;
 						descripcion.innerHTML  =  myData.autores[i].descripcion;
 						articulo.innerHTML     =  ` 
