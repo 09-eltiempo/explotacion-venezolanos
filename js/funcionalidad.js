@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0m97666666697';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?0fi7567567';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -34,20 +34,20 @@ redesSociales.innerHTML = `
 
 					<div class="contenido_redes_sociales">
 						<a href="https://www.facebook.com/eltiempo/" target="blank">
-							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes quitar_espacio" data-aos="fade-up-left" data-aos-duration="700">
+							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes quitar_espacio" data-aos="fade-up-left" data-aos-duration="700">
 						</a>
 						<a href="https://twitter.com/ELTIEMPO" target="blank">
-							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1000">
+							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1000">
 						</a>
-						<a href="#"><img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1300"></a>
-						<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes tres_puntos" data-aos="fade-up-left" data-aos-duration="1500">
+						<a href="#"><img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1300"></a>
+						<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes tres_puntos" data-aos="fade-up-left" data-aos-duration="1500">
 
 						<div class="redes_desplegable">
 							<a href="https://www.facebook.com/eltiempo/" target="blank">
-								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes">
+								<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes">
 							</a>
 							<a href="https://twitter.com/ELTIEMPO" target="blank">
-								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes">
+								<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes">
 							</a>
 						</div>
 					</div>`
@@ -87,13 +87,13 @@ redesSociales.innerHTML = `
 					<div class="hexagono1" id= "autor${i}" data-aos="fade-up-left" data-aos-duration="1500">
 						<figure>
 							<h2 class="titular_hexagono">${myData.autores[i].titulo}</h2>
-							<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-titular-5.svg?56" class="hexagonos frontal   hexagono-resposive-frontal">
+							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-titular-5.svg?56" class="hexagonos frontal   hexagono-resposive-frontal">
 							<div class="dejar-estatico trasera">
-								<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56" class="hexagonos frontal hexagono-resposive-atras">
+								<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56" class="hexagonos frontal hexagono-resposive-atras">
 								<div class="contenido_informacion">
 									<center><img src="${myData.autores[i].foto}" class="hexagonos frontal imagen-autor"></center>
-									<h3 class="Nombre-Autor">${myData.autores[i].nombre}</h3>
-									<p class="descripcion_articulo">${myData.autores[i].descripcion}</p>
+									<h3 class="Nombre-Autor">${myData.autores[i].nombreVenezolano}</h3>
+									<p class="descripcion_articulo">${myData.autores[i].actividad}</p>
 									<div id="${i}" class="verMas">
 										<hr class="linea-divisora">
 										<a><p class="leer_mas">LEER <br> <span class="signo">+</span></p></a>
@@ -111,8 +111,8 @@ redesSociales.innerHTML = `
 			
 				var  frontal = $(".hexagono-resposive-frontal");
 				var  atras   = $(".hexagono-resposive-atras");
-				frontal.attr('src', 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/frontal-responsive.svg');
-				atras.attr('src', 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/back-responsive.svg');										  		
+				frontal.attr('src', 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/hexagono-titular-5.svg?56');
+				atras.attr('src', 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56');										  		
 			}
 			
 			$(".verMas").click(function(e) {
@@ -139,23 +139,23 @@ redesSociales.innerHTML = `
 
 				if(id == 0){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota1.html?90", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota1.html?90", "_blank");
 					
 				}else if(id == 2){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota3.html?90", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota3.html?90", "_blank");
 
 				}else if(id == 4){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota5.html?90", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota5.html?90", "_blank");
 
 				}else if(id == 6){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota7.html?90", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota7.html?90", "_blank");
 				
 				}else if(id == 13){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota14.html?90", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota14.html?90", "_blank");
 
 				}else{
 
@@ -210,24 +210,24 @@ redesSociales.innerHTML = `
 															<hr class="linea_divisora_red">
 															<div class="contenido_redes_sociales redes_mobile">
 																<a href="https://www.facebook.com/eltiempo/" target="blank">
-																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
+																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
 																</a>
 																<a href="https://twitter.com/ELTIEMPO" target="blank">
-																	<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
+																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
 																</a>
-																<a href="#"><img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile"></a>
+																<a href="#"><img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile"></a>
 																
-																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">
+																<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">
 																<div class="red_adicional">
 																	<a href="https://twitter.com/ELTIEMPO" target="blank">
-																		<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt=""  class="icono_redes redes_movile  left_movile">
+																		<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt=""  class="icono_redes redes_movile  left_movile">
 																	</a>
 
 																	<a href="https://twitter.com/ELTIEMPO" target="blank">
-																		<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/icono-facebook.svg"   alt="" class="icono_redes redes_movile  left_movile">
+																		<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg"   alt="" class="icono_redes redes_movile  left_movile">
 																	</a>
 																</div>
-																<img src="https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/img/flecha_atras.png"   class="icono_redes flecha_atras redes_movile">
+																<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/flecha_atras.png"   class="icono_redes flecha_atras redes_movile">
 															</div>
 														</div>	`;
 

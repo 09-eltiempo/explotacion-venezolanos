@@ -2,15 +2,20 @@
 *{
     margin: 0px;
     padding: 0px;
+ 
+}
+
+
+.contenedor_principal_nota {
     background-color: #FFC95C;
 }
 
-.base_imagen_sumario{
-
+.base_imagen_sumario {
     width: 100%;
     max-width: 622px;
     display: table;
-    margin: 100px auto 0px auto;
+    margin: 0px auto 0px auto;
+    padding-top: 94px;
 }
 
 .contenedor_texto{
@@ -95,12 +100,13 @@
     padding-top: 12px;
 }
 
-.icono_redes{
+.icono_redes {
     width: 31px;
     margin-left: 14px;
     transition: transform .2s;
     max-width: inherit;
     cursor: pointer;
+    float: left;
 }
 
 .icono_redes:hover{
@@ -131,11 +137,11 @@
 	margin-left: 0px;
 }
 
-.base_icono_cerrar{
-
-	width: auto;
-	margin: 0px auto 100px auto;
-	display: table;
+.base_icono_cerrar {
+    width: auto;
+    margin: 0px auto 0px auto;
+    display: table;
+    padding-bottom: 100px;
 }
 
 .icono_cerrar {
