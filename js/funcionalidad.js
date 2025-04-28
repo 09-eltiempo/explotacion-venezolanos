@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0mm5667k';
+const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0m97897';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -152,6 +152,10 @@ redesSociales.innerHTML = `
 				}else if(id == 6){
 
 						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota7.html?90", "_blank");
+				
+				}else if(id == 13){
+
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota14.html?90", "_blank");
 
 				}else{
 
