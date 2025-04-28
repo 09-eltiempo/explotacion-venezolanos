@@ -1,6 +1,7 @@
 *{
 	margin:  0px;
 	padding: 0px;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -224,10 +225,9 @@ figure{
     line-height: 27px;
 }
 
-.video_youtube_notaP{
-
+.video_youtube_notaP {
     width: 100%;
-    height: 600px;
+    height: 563px;
 }
 
 figure .frontal, figure .trasera{
@@ -262,13 +262,13 @@ figure .trasera {
   -webkit-transform: perspective(600px) rotateY(180deg);
   /*transform-style: preserve-3d;*/
 }
-
 .contenedor_nota_principal {
     width: 100%;
     max-width: 1000px;
     /* background-color: red; */
     display: table;
     margin: auto;
+    padding: 0px 0px;
 }
 
 .dejar-estatico .trasera{
@@ -938,6 +938,19 @@ figure {
 
 @media (max-width: 600px) {
 
+
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 234px;
+}
+
+.parrafo_notaP {
+    padding: 0px 40px;
+}
+
+
+
 .esconder_mobile{
   display: none;
 }
@@ -1013,22 +1026,24 @@ figure {
     box-sizing: border-box;
     margin-top: 96px;
 }
+
 .descripcion {
-    width: 205px;
+    width: 100%;
     float: inherit;
     margin: auto;
     text-align: left;
     font-size: 19px;
     line-height: 27px;
-    padding: 20px 0px;
+    padding: 20px 40px 0px 40px;
+    margin-bottom: 40px;
 }
 
 .contenido_redes_sociales {
-    width: auto;
-    display: inline-flex;
-    margin: 76px auto 0 auto;
-    position: relative;
-}
+        width: auto;
+        display: inline-flex;
+        margin: 27px auto 0 auto;
+        position: relative;
+    }
 .seccion {
     width: 100%;
     margin: auto;
@@ -1132,14 +1147,14 @@ figure .trasera {
 }
 
 .redes_desplegable {
-    display: none;
-    position: absolute;
-    width: 30px;
-    left: 185px;
-    top: -75px;
-    background-color: #1abfc8;
-    padding-top: 5px;
-}
+        display: none;
+        position: absolute;
+        width: 30px;
+        left: 188px;
+        top: -67px;
+        background-color: #ffc95c;
+        padding-top: 5px;
+    }
 
 
 /*---------------pantalla2------------------*/
@@ -1297,6 +1312,10 @@ figure .trasera {
 
 
 @media (max-width: 400px) {
+
+
+
+
 
 .base-articulo-completo {
     height: 509px;
@@ -1498,10 +1517,24 @@ figure {
     width: 22px;
 }
 
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 212px;
+}
+
+
+
 }
 
 
 @media (max-width: 365px) {
+
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 203px;
+}
 
 .red_adicional {
     width: 23px;

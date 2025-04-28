@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0m97897';
+const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0m97666666697';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
