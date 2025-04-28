@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?06664567k';
+const jsonURL = 'https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/data/data.json?0mm5667k';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -139,19 +139,19 @@ redesSociales.innerHTML = `
 
 				if(id == 0){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota1.html", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota1.html?90", "_blank");
 					
 				}else if(id == 2){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota3.html", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota3.html?90", "_blank");
 
 				}else if(id == 4){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota5.html", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota5.html?90", "_blank");
 
 				}else if(id == 6){
 
-						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota7.html", "_blank");
+						window.open("https://www.eltiempo.com/infografias/2016/Explotacion_laboral_venezolanos/nota7.html?90", "_blank");
 
 				}else{
 
@@ -259,7 +259,6 @@ redesSociales.innerHTML = `
 		//console.log(clicks[0]);
 
 		
-		$(`#0`).parent().parent().parent().addClass('dejar-estatico')
 
 		for(let i = 0; i < clicks.length; i++){
 
