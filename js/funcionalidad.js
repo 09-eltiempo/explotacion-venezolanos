@@ -139,23 +139,23 @@ redesSociales.innerHTML = `
 
 				if(id == 0){
 
-						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota1.html?90", "_blank");
+						window.open("https://pre.eltiempo.com/probando/las-barreras-de-domiciliarios-constructores-y-mecanicos-10217", "_blank");
 					
 				}else if(id == 2){
 
-						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota3.html?90", "_blank");
+						window.open("https://pre.eltiempo.com/opinion/la-migracion-venezolana-en-colombia-que-ha-sido-victima-y-eslabon-de-la-criminalidad-10218", "_blank");
 
 				}else if(id == 4){
 
-						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota5.html?90", "_blank");
+						window.open("https://pre.eltiempo.com/opinion/las-luchas-de-una-madre-venezolana-por-vender-en-un-parque-de-cucuta-10219", "_blank");
 
 				}else if(id == 6){
 
-						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota7.html?90", "_blank");
+						window.open("https://pre.eltiempo.com/opinion/la-artista-escenica-que-ha-intentado-reinventar-10221", "_blank");
 				
 				}else if(id == 13){
 
-						window.open("https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/nota14.html?90", "_blank");
+						window.open("https://pre.eltiempo.com/opinion/el-cuidador-de-motos-venezolano-que-fue-asesinado-por-las-disidencias-10223", "_blank");
 
 				}else{
 

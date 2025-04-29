@@ -955,6 +955,10 @@ figure {
 @media (max-width: 650px) {
 
 
+.linea_divisora_interna {
+    width: 100%;
+}
+
 .base_divisor_ver_mas {
     padding: 0px 40px;
     margin-bottom: 0px;
@@ -1217,14 +1221,15 @@ figure .trasera {
 }
 
 .seccion-articulo {
-    width: 78%;
-    display: table;
-    float: left;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    margin-left: 0px;
-    float: right;
-}
+        width: 275px;
+        display: block;
+        float: left;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        margin-left: 0px;
+        float: right;
+        position: relative;
+    }
 
 .linea_divisora_red {
     display: none;
@@ -1244,10 +1249,11 @@ figure .trasera {
     width: 31px;
 }
 
-.base-articulo-completo {
-    /* overflow-y: initial; */
-    height: 600px;
-}
+    .base-articulo-completo {
+        /* overflow-y: initial; */
+        height: 600px;
+        overflow-x: hidden;
+    }
 .fondo_body {
   
     overflow-y: hidden;
@@ -1280,10 +1286,26 @@ figure .trasera {
 }
 
 .base_imagen_movile.ilustracion_movile {
-    display: block;
-    padding: 0px;
+        display: block;
+        padding: 0px;
+        background-color: #ffc95c;
+    }
 
+    .sumarioNota {
+        font-size: 18px;
+        line-height: 23px;
+        display: table;
+        text-align: left;
+    }
+
+.descripcion2 {
+    margin-bottom: 8px;
 }
+
+.subtitulo_nota {
+    width: 100%;
+}
+
 
 .base_imagen_movile.ilustracion_desktop {
     display: none;
@@ -1315,15 +1337,15 @@ figure .trasera {
     margin-top: 17px;
 }
 
-.descripcion2 {
-    text-align: left;
-    margin-bottom: 30px;
+    .descripcion2 {
+        text-align: left;
+        margin-bottom: 30px;
         font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 44px;
-}
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 8px;
+    }
 
 .parrafos {
     position: relative;
@@ -1510,15 +1532,15 @@ figure {
     margin-top: 16px;
 }
 
-.descripcion2 {
-    text-align: left;
-    margin-bottom: 29px;
+    .descripcion2 {
+        text-align: left;
+        margin-bottom: 29px;
         font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 29px;
-}
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 15px;
+    }
 
 .parrafos {
     position: relative;
@@ -1658,16 +1680,15 @@ figure {
     margin-top: 13px;
 }
 
-.descripcion2 {
-
-    font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 12px;
-}
+    .descripcion2 {
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 17px;
+        text-align: left;
+        font-size: 12px;
+    }
 
 .parrafos {
     position: relative;
@@ -1863,16 +1884,16 @@ figure {
 }
 
 .descripcion2 {
-      font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 29px;
-    text-align: left;
-    margin-bottom: 32px;
-    font-size: 12px;
-    margin-top: 4px;
-}
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 29px;
+        text-align: left;
+        margin-bottom: 13px;
+        font-size: 12px;
+        margin-top: 4px;
+    }
 .parrafos {
     position: relative;
     font-family: 'KohinoorTelugu-Light';
