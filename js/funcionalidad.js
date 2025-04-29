@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?0fi7567567';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?04234234';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -162,7 +162,7 @@ redesSociales.innerHTML = `
 
 					
 
-					ilustracion_movile.style.marginTop = '0px';
+					ilustracion_movile.style.marginTop = '50px';
 					contenido_principal.style.display = "none";
 					body.classList.add('fondo_body');
 

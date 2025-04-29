@@ -1565,8 +1565,9 @@ figure {
 }
 
 .seccion-articulo {
-    width: 77%;
-  }
+        /* width: 77%; */
+        width: 239px;
+    }
 
 .icono_redes.redes_movile {
     margin-left: 15px;
@@ -1599,6 +1600,11 @@ figure {
 
 @media (max-width: 365px) {
 
+
+.seccion-articulo {
+        /* width: 77%; */
+        width: 226px;
+    }
 
 .video_youtube_notaP {
     width: 100%;
@@ -1859,9 +1865,9 @@ figure {
     float: right;
 }
 
-.seccion-articulo {
-    width: 78%;
-}
+    .seccion-articulo {
+        width: 198px;
+    }
 
 .base_textos {
     margin-top: 41px;
