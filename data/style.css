@@ -1,6 +1,7 @@
 *{
 	margin:  0px;
 	padding: 0px;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -31,6 +32,9 @@ font-display:auto;font-style:italic;font-weight:700;
   font-weight: normal;
   font-style: normal;
 }
+
+
+
 
 @font-face {
   font-family: 'KohinoorTelugu-Medium';
@@ -67,8 +71,8 @@ font-display:auto;font-style:italic;font-weight:700;
   font-weight: normal;
   font-style: normal;
 }
-body{
-	background-color: #31CBD4;
+body {
+    background-color: #FFC95C;
 }
 a{
 	text-decoration: none;
@@ -88,26 +92,182 @@ figure{
     align-items: center;
 }
 
+.boton_ver_mas span {
+    float: left;
+}
+
+.boton_ver_menos span {
+    float: left;
+}
+
+.contenedor_articulo{
+
+    width: 100%;
+    max-width: 638px;
+    margin: auto;
+    display: table;
+}
+
+.flecha_abajo {
+    width: 14px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+
+.boton_ver_menos span {
+    float: left;
+}
+
+.linea_divisora {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    border: none;
+    margin: 20px 0px;
+}
+
+.linea_divisora_interna {
+    width: 523px;
+    border: none;
+    height: 2px;
+    background-color: #000;
+    margin: 9px auto 22px auto;
+}
+
+.sumarioNota {
+    font-family: "aglet-slab";
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 23px;
+    text-align: center;
+}
+
+#articulo_VerMas{
+
+    display: none;
+}
+
+.magen_migrantes_lts{
+
+    width: 100%;
+}
+
+.base_divisor_ver_mas {
+    width: 100%;
+    display: table;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.boton_ver_mas, .boton_ver_menos {
+    position: absolute;
+    top: 4px;
+    background-color: #ffc95c;
+    padding: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    font-family: "aglet-slab";
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.autor_credito {
+    font-size: 18px;
+    width: 523px;
+    margin: 0px auto 23px auto;
+    display: block;
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 27px;
+}
+
+.subtitulo_nota {
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    width: 523px;
+    margin: 40px auto 19px auto;
+    color: #000;
+    font-size: 20px;
+}
+
+.boton_ver_mas:hover{
+    transform: scale(0.9);
+}
+
+.boton_ver_menos:hover{
+    transform: scale(0.9);
+}
+
+.ancla{
+
+    text-decoration: none;
+}
+
+.base_video_notaP {
+    width: 100%;
+    max-width: 1000px;
+    display: table;
+    margin: 40px auto;
+}
+
+.contenedor_grafico_NP {
+    width: 100%;
+    display: table;
+    margin: 40px 0px;
+}
+
+.imagen_migrantes_lts {
+    width: 100%;
+}
+
+.parrafo_notaP {
+    position: relative;
+    font-size: 18px;
+    margin: 0px auto 13px auto;
+    display: block;
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 27px;
+}
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 563px;
+}
+
 figure .frontal, figure .trasera{
   transition: all ease .5s;
+  cursor: pointer;
 }
 
 figure .frontal {
     display: block;
- 
+    cursor: pointer;
 }
 .hexagonos.frontal.hexagono-resposive-atras {
     width: 298px;
 }
 
-figure .trasera{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  transform: perspective(600px) rotateY(180deg);
-  /*backface-visibility: hidden;*/
-  overflow: hidden;
-  z-index: -1 ;
+figure .trasera {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    /* backface-visibility: hidden; */
+    overflow: hidden;
+    z-index: -1;
 }
 
 .hexagono1:hover .trasera{
@@ -118,6 +278,14 @@ figure .trasera{
   -webkit-transform: perspective(600px) rotateY(180deg);
   /*transform-style: preserve-3d;*/
 }
+.contenedor_nota_principal {
+    width: 100%;
+    max-width: 1000px;
+    /* background-color: red; */
+    display: table;
+    margin: auto;
+    padding: 0px 0px;
+}
 
 .dejar-estatico .trasera{
   z-index: 1;
@@ -126,7 +294,7 @@ figure .trasera{
 .base_imagen_movile.ilustracion_desktop {
     width: 100%;
     display: table;
-    background-color: #7ed4d8;
+    background-color: #ffc95c;
     position: relative;
     z-index: 90;
 }
@@ -149,7 +317,7 @@ figure .trasera{
 }
 .centrar_redes {
     width: auto;
-    margin: auto;
+    margin: 9px auto 62px auto;
     display: table;
 }
 .ilustracion_movile{
@@ -160,12 +328,12 @@ figure .trasera{
   display: none;
 }
 .redes_desplegable {
-    display: none; 
+    display: none;
     position: absolute;
     width: 30px;
     left: 179px;
     top: 26px;
-    background-color: #1abfc8;
+    background-color: #e8b754;
     padding-top: 5px;
 }
 .icono_redes {
@@ -193,37 +361,45 @@ figure .trasera{
 
 .seccion {
     width: 600px;
-    margin: auto;
+    margin: 258px auto 0px auto;
     display: table;
 }
 
+.titular_principal {
+    width: 100%;
+}
+
 .header2 {
-    width: 661px;
+    width: 900px;
     display: table;
     margin: 145px auto 40px auto;
 }
 .descripcion {
-    width: 546px;
-    float: right;
-    font-size: 24px;
-    margin-top: 0px;
+    width: 865px;
+    text-align: center;
+    font-size: 27px;
     font-family: "aglet-slab";
-    margin-bottom: 50px;
+    font-weight: 400;
+    font-stretch: normal;
+    margin: 0px auto 50px auto;
+    line-height: 36px;
 }
 .hexagonos {
     width: 300px;
 }
 .titular_hexagono {
-
     font-family: aglet-slab, sans-serif;
     font-style: normal;
     font-weight: 300;
     position: absolute;
-    font-size: 29px;
-    padding: 0px 60px;
-    line-height: 28px;
+    font-size: 26px;
+    padding: 0px 55px;
+    line-height: 31px;
     margin: auto;
     text-align: center;
+    left: 0;
+    right: 0;
+    cursor: pointer;
 }
 .verMas {
     position: relative;
@@ -243,6 +419,7 @@ figure .trasera{
     align-items: center;
     position: relative;
     float: left;
+    top: 0;
 }
 .footer-mobile{
   display: none;
@@ -272,9 +449,9 @@ figure .trasera{
     font-family: aglet-slab, sans-serif;
     font-weight: 300;
     font-style: italic;
-
     color: #000;
     width: auto;
+    max-width: 200px;
     margin: auto;
     font-style: italic;
     padding-bottom: 5px;
@@ -300,52 +477,56 @@ figure .trasera{
     background-color: #000;
 }
 .contenedor_seccion {
-
     width: 1200px;
     display: table;
     position: relative;
-    margin-top: 135px;
+    margin-top: 81px;
 }
-
 .dejar-estatico{
 
   -webkit-transform: perspective(600px) rotateY(180deg);
 }
 #autor0 {
     position: absolute;
-    left: 0;
-    top: 127px;
+    left: 449px;
+    top: -1px;
 }
 #autor3 {
     position: absolute;
-    right: 5px;
-    top: 127px;
+    left: 0px;
+    top: 388px;
 }
 #autor6 {
     position: absolute;
-    top: 516px;
-    left: 0px;
-}
-#autor9 {
-    position: absolute;
-    top: 516px;
+    top: 388px;
     right: 5px;
 }
-#autor12 {
+
+#autor7 {
     position: absolute;
-    left: 0;
-    top: 902px;
+    left: 2px;
+    top: 774px;
 }
-#autor15 {
+
+#autor10 {
     position: absolute;
-    right: 5px;
-    top: 902px;
+    right: 7px;
+    top: 773px;
 }
+
+
 #autor16 {
     position: absolute;
-    left: 0;
-    top: 1290px;
+    right: 5px;
+    top: 1157px;
 }
+
+#autor13 {
+    position: absolute;
+    left: 0;
+    top: 1163px;
+}
+
 #autor19 {
     position: absolute;
     right: 5px;
@@ -395,9 +576,8 @@ figure .trasera{
 }
 /*---------------------------PANTALLA ARTICULO--------------------------------*/
 
-.fondo_body{
-
-    background-color: #7ED4D8;
+.fondo_body {
+    background-color: #FFC95C;
     overflow-y: hidden;
 }
 .contenido_articulo{
@@ -514,11 +694,15 @@ figure .trasera{
 /*-JSON--*/
 .parrafos {
     position: relative;
-    font-family: 'KohinoorTelugu-Light';
     font-size: 18px;
     width: 523px;
-    margin: 0px auto 10px auto;
+    margin: 0px auto 23px auto;
     display: block;
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    line-height: 27px;
 }
 
 
@@ -640,81 +824,107 @@ figure {
     height: 236px;
 }
 
-#autor29 {
-    position: absolute;
-    right: 11px;
-    top: 1864px;
-}
 
-.titular_hexagono {
 
-    font-family: aglet-slab, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    padding: 0px 46px;
-    line-height: 26px;
-    margin: auto;
-    text-align: center;
-}
+    .titular_hexagono {
+        font-family: aglet-slab, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        padding: 0px 46px;
+        line-height: 27px;
+        margin: auto;
+        text-align: center;
+    }
 
-#autor9 {
-    position: absolute;
-    top: 465px;
-    right: 11px;
-}
+    #autor0 {
+        position: absolute;
+        left: 415px;
+        top: 0px;
+    }
 
-#autor6 {
-    position: absolute;
-    top: 467px;
-    left: 11px;
-}
+    #autor3 {
+        position: absolute;
+        left: 11px;
+        top: 353px;
+    }
 
-#autor12 {
-    position: absolute;
-    left: 0;
-    top: 814px;
-}
+    #autor6 {
+        position: absolute;
+        top: 353px;
+        right: 10px;
+    }
 
-#autor15 {
-    position: absolute;
-    right: 5px;
-    top: 814px;
-}
+    #autor7 {
+        position: absolute;
+        left: 11px;
+        top: 701px;
+    }
+
+#autor10 {
+        position: absolute;
+        right: 10px;
+        top: 701px;
+    }
+
+
+    #autor16 {
+        right: 10px;
+        position: absolute;
+        top: 1052px;
+    }
+
+    #autor13 {
+        position: absolute;
+        top: 1052px;
+        left: 11px;
+    }
 
 #autor19 {
     position: absolute;
-    right: 11px;
-    top: 1165px;
+    right: 5px;
+    top: 1290px;
 }
-
-#autor16 {
-    position: absolute;
-    left: 11px;
-    top: 1165px;
-}
-
-#autor25 {
-    position: absolute;
-    right: 11px;
-    top: 1514px;
-}
-
 #autor22 {
     position: absolute;
-    left: 10px;
-    top: 1514px;
+    left: 0;
+    top: 1682px;
 }
+#autor25 {
+    position: absolute;
+    right: 5px;
+    top: 1682px;
+}
+#autor26 {
+    position: absolute;
+    left: 0;
+    top: 2064px;
+}
+#autor29 {
+    position: absolute;
+    right: 5px;
+    top: 2064px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .hexagono1 {
     width: 270px;
     height: 233px;
 }
-.header2 {
-    width: 611px;
-    display: table;
-    margin: 150px auto 0 auto;
-}
+    .header2 {
+        width: 900px;
+        display: table;
+        margin: 150px auto 0 auto;
+    }
 .contenedor_seccion {
     width: 1100px;
     display: table;
@@ -722,24 +932,49 @@ figure {
     margin: 100px auto 20px auto;
 }
 
-.seccion {
-    width: 540px;
-    margin: auto;
-    display: table;
-}
+
+    .seccion {
+        width: 540px;
+        display: table;
+        margin: 235px auto 0px auto;
+    }
 
 .descripcion {
-    width: 506px;
-    float: right;
-    font-size: 22px;
-    margin-top: 0px;
-    font-family: "aglet-slab";
-    margin-bottom: 50px;
-}
+        width: 100%;
+        max-width: 850px;
+        font-size: 23px;
+        margin-top: 0px;
+        font-family: "aglet-slab";
+        margin-bottom: 50px;
+        text-align: center;
+        margin: 0px auto 50px auto;
+    }
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+
+
+.linea_divisora_interna {
+    width: 100%;
+}
+
+.base_divisor_ver_mas {
+    padding: 0px 40px;
+    margin-bottom: 0px;
+}
+
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 234px;
+}
+
+.parrafo_notaP {
+    padding: 0px 40px;
+}
+
+
 
 .esconder_mobile{
   display: none;
@@ -777,7 +1012,14 @@ figure {
     display: initial;
 }
 
-#autor0, #autor3, #autor6, #autor9, #autor12, #autor19, #autor22, #autor25, #autor26, #autor29, #autor15, #autor16 {
+.boton_ver_mas span {
+    float: left;
+}
+
+
+#autor0, #autor1, #autor2, #autor3, #autor4, #autor5, #autor6, #autor7, 
+#autor8, #autor9, #autor10, #autor11, #autor12, #autor13, #autor14, 
+#autor15, #autor16, #autor17 {
 
     position: relative;
     left: 0;
@@ -811,27 +1053,29 @@ figure {
 }
 
 .contenedor_seccion {
-    width: 100%;
-    padding: 0px 24px;
-    box-sizing: border-box;
-    margin-top: 96px;
-}
+        width: 100%;
+        padding: 0px 24px;
+        box-sizing: border-box;
+        margin-top: 32px;
+    }
+
 .descripcion {
-    width: 205px;
+    width: 100%;
     float: inherit;
     margin: auto;
     text-align: left;
     font-size: 19px;
     line-height: 27px;
-    padding: 20px 0px;
+    padding: 20px 40px 0px 40px;
+    margin-bottom: 40px;
 }
 
 .contenido_redes_sociales {
-    width: auto;
-    display: inline-flex;
-    margin: 76px auto 0 auto;
-    position: relative;
-}
+        width: auto;
+        display: inline-flex;
+        margin: 27px auto 0 auto;
+        position: relative;
+    }
 .seccion {
     width: 100%;
     margin: auto;
@@ -935,14 +1179,14 @@ figure .trasera {
 }
 
 .redes_desplegable {
-    display: none;
-    position: absolute;
-    width: 30px;
-    left: 185px;
-    top: -75px;
-    background-color: #1abfc8;
-    padding-top: 5px;
-}
+        display: none;
+        position: absolute;
+        width: 30px;
+        left: 188px;
+        top: -67px;
+        background-color: #ffc95c;
+        padding-top: 5px;
+    }
 
 
 /*---------------pantalla2------------------*/
@@ -977,14 +1221,15 @@ figure .trasera {
 }
 
 .seccion-articulo {
-    width: 78%;
-    display: table;
-    float: left;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    margin-left: 0px;
-    float: right;
-}
+        width: 275px;
+        display: block;
+        float: left;
+        padding: 20px 0px;
+        box-sizing: border-box;
+        margin-left: 0px;
+        float: right;
+        position: relative;
+    }
 
 .linea_divisora_red {
     display: none;
@@ -1004,12 +1249,13 @@ figure .trasera {
     width: 31px;
 }
 
-.base-articulo-completo {
-    /* overflow-y: initial; */
-    height: 600px;
-}
+    .base-articulo-completo {
+        /* overflow-y: initial; */
+        height: 600px;
+        overflow-x: hidden;
+    }
 .fondo_body {
-    background-color: #7ED4D8;
+  
     overflow-y: hidden;
 }
 
@@ -1032,7 +1278,7 @@ figure .trasera {
 .base_imagen_movile {
     width: 100%;
     display: table;
-    background-color: #7ed4d8;
+    
     padding: 0px 0px 20px 0px;
     position: fixed;
     z-index: 90;
@@ -1040,10 +1286,26 @@ figure .trasera {
 }
 
 .base_imagen_movile.ilustracion_movile {
-    display: block;
-    padding: 0px;
+        display: block;
+        padding: 0px;
+        background-color: #ffc95c;
+    }
 
+    .sumarioNota {
+        font-size: 18px;
+        line-height: 23px;
+        display: table;
+        text-align: left;
+    }
+
+.descripcion2 {
+    margin-bottom: 8px;
 }
+
+.subtitulo_nota {
+    width: 100%;
+}
+
 
 .base_imagen_movile.ilustracion_desktop {
     display: none;
@@ -1075,15 +1337,15 @@ figure .trasera {
     margin-top: 17px;
 }
 
-.descripcion2 {
-    text-align: left;
-    margin-bottom: 30px;
+    .descripcion2 {
+        text-align: left;
+        margin-bottom: 30px;
         font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 44px;
-}
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 8px;
+    }
 
 .parrafos {
     position: relative;
@@ -1096,10 +1358,20 @@ figure .trasera {
 }
 
 
+#autor16 {
+    margin: auto;
+    left: 87px;
 }
 
 
-@media (max-width: 400px) {
+}
+
+
+@media (max-width: 385px) {
+
+
+
+
 
 .base-articulo-completo {
     height: 509px;
@@ -1125,15 +1397,15 @@ figure .trasera {
     top: -56px;
 }
 
-.descripcion {
-    width: 234px;
-    float: inherit;
-    margin: auto;
-    text-align: left;
-    font-size: 17px;
-    line-height: 25px;
-    padding: 14px 0px 0px 53px;
-}
+    .descripcion {
+        width: 100%;
+        float: inherit;
+        margin: 0px auto 30px auto;
+        text-align: left;
+        font-size: 17px;
+        line-height: 25px;
+        padding: 0px 40px 0px 40px;
+    }
 .contenedor_seccion {
     width: 100%;
     padding: 0px 24px;
@@ -1158,12 +1430,12 @@ figure {
     transition: transform .2s;
 }
 
-.contenedor_seccion {
-    width: 100%;
-    padding: 0px 24px;
-    box-sizing: border-box;
-    margin-top: 72px;
-}
+    .contenedor_seccion {
+        width: 100%;
+        padding: 0px 24px;
+        box-sizing: border-box;
+        margin-top: 31px;
+    }
 
 .contenido_redes_sociales {
     width: auto;
@@ -1260,15 +1532,15 @@ figure {
     margin-top: 16px;
 }
 
-.descripcion2 {
-    text-align: left;
-    margin-bottom: 29px;
+    .descripcion2 {
+        text-align: left;
+        margin-bottom: 29px;
         font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 29px;
-}
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 15px;
+    }
 
 .parrafos {
     position: relative;
@@ -1293,18 +1565,51 @@ figure {
 }
 
 .seccion-articulo {
-    width: 77%;
-  }
+        /* width: 77%; */
+        width: 239px;
+    }
 
 .icono_redes.redes_movile {
     margin-left: 15px;
     width: 22px;
 }
 
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 212px;
+}
+
+
+
+#autor16 {
+    margin: auto;
+    left: 81px;
+    top: 2px;
+}
+
+.parrafo_notaP {
+    position: relative;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
 }
 
 
 @media (max-width: 365px) {
+
+
+.seccion-articulo {
+        /* width: 77%; */
+        width: 226px;
+    }
+
+.video_youtube_notaP {
+    width: 100%;
+    height: 203px;
+}
 
 .red_adicional {
     width: 23px;
@@ -1381,16 +1686,15 @@ figure {
     margin-top: 13px;
 }
 
-.descripcion2 {
-
-    font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 12px;
-}
+    .descripcion2 {
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 17px;
+        text-align: left;
+        font-size: 12px;
+    }
 
 .parrafos {
     position: relative;
@@ -1406,6 +1710,14 @@ figure {
     margin-left: 17px;
     width: 23px;
 }
+
+#autor16 {
+    margin: auto;
+    left: 78px;
+    top: 1px;
+}
+
+
 
 }
 
@@ -1425,14 +1737,9 @@ figure {
     top: -6px;
 }
 .descripcion {
-    width: 178px;
-    float: inherit;
-    margin: auto;
-    text-align: left;
-    font-size: 13px;
-    line-height: 21px;
-    padding: 14px 0px 0px 29px;
-}
+        font-size: 17px;
+        line-height: 25px;
+    }
 
 .icono_redes {
     width: 27px;
@@ -1448,11 +1755,11 @@ figure {
 }
 
 .contenedor_seccion {
-    width: 100%;
-    padding: 0px 21px;
-    box-sizing: border-box;
-    margin-top: 72px;
-}
+        width: 100%;
+        padding: 0px 21px;
+        box-sizing: border-box;
+        margin-top: 25px;
+    }
 
 .hexagono1 {
     width: 139px;
@@ -1558,9 +1865,9 @@ figure {
     float: right;
 }
 
-.seccion-articulo {
-    width: 78%;
-}
+    .seccion-articulo {
+        width: 198px;
+    }
 
 .base_textos {
     margin-top: 41px;
@@ -1583,16 +1890,16 @@ figure {
 }
 
 .descripcion2 {
-      font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 29px;
-    text-align: left;
-    margin-bottom: 32px;
-    font-size: 12px;
-    margin-top: 4px;
-}
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 29px;
+        text-align: left;
+        margin-bottom: 13px;
+        font-size: 12px;
+        margin-top: 4px;
+    }
 .parrafos {
     position: relative;
     font-family: 'KohinoorTelugu-Light';
@@ -1616,6 +1923,15 @@ figure {
     cursor: pointer;
     transition: transform .4s;
 }
+
+
+#autor16 {
+    margin: auto;
+    left: 69px;
+    top: 1px;
+}
+
+
 
 }
 

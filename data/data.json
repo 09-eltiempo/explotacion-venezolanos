@@ -2,7 +2,7 @@
   "autores": [
     {
       "id": "0",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto1.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto1.png",
       "titulo": "Domiciliarios, <br> constructores <br> y mecánicos",
       "nombreVenezolano":"Cemir <br> Castillo",
       "actividad":"Constructor",
@@ -17,7 +17,7 @@
     },
     {
       "id": "1",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto2.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto2.png",
       "titulo": "Obstáculos de <br> una empleada <br> doméstica <br> migrante",
       "nombreVenezolano":"Magdelin <br> Narváez",
       "actividad":"Empleada Doméstica",
@@ -32,7 +32,7 @@
     },
     {
       "id": "2",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto7.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto3.png",
       "titulo": "La artista <br> escénica que <br> ha intentado <br> reinventar su <br> oficio",
       "nombreVenezolano":"Gilyari Gabriela <br> Montani",
       "actividad":"Artista escénica",
@@ -47,7 +47,7 @@
     },
     {
       "id": "3",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto3.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto4.png",
       "titulo": "Secuestrada <br> en Cúcuta y  <br> explotada <br> sexualmente",
       "nombreVenezolano":"Fairidys <br> Coello",
       "actividad":"Repostera",
@@ -63,7 +63,7 @@
     },
     {
       "id": "4",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto4.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto5.png",
       "titulo": "Luchas de <br> una madre <br> venezolana",
       "nombreVenezolano":"Elena <br> Mendoza",
       "actividad":"Vendedora ambulante",
@@ -78,7 +78,7 @@
     },
     {
       "id": "5",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto5.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto6.png",
       "titulo": "Relato de una <br> migrante que <br> fue mucama",
       "nombreVenezolano":"Iva Milagros <br> Contreras",
       "actividad":"Mucama",
@@ -93,7 +93,7 @@
     },
      {
       "id": "6",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto6.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto7.png",
       "titulo": "Víctima y <br> eslabón de la <br> criminalidad",
       "nombreVenezolano":"Migrantes <br>explotados por <br>grupos ilegales",
       "actividad":"",
@@ -108,7 +108,7 @@
     },    
     {
       "id": "7",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto7.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto8.png",
       "titulo": "El barbero en <br> Arauca",
       "nombreVenezolano":"Fernando",
       "actividad":"Barbero",
@@ -123,7 +123,7 @@
     },
     {
       "id": "8",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto8.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto9.png",
       "titulo": "Desafíos de <br> los 'venteros' <br> ambulantes <br> venezolanos",
       "nombreVenezolano":"Blanca",
       "actividad":"Ventera ambulante",
@@ -138,7 +138,7 @@
     },
     {
       "id": "9",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto9.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto10.png?90098",
       "titulo": "Un migrante <br> venezolano <br> que trabaja en <br> el campo",
       "nombreVenezolano":"Luis Alejandro <br> Osorio Montes",
       "actividad":"Campesino",
@@ -153,7 +153,7 @@
     },
     {
       "id": "10",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto10.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto11.png",
       "titulo": "Lleva más de <br> dos años <br> esperando el <br> pago de sus <br> prestaciones",
       "nombreVenezolano":"Wendy Norelys <br>Álvarez Sarmiento",
       "actividad":"",
@@ -168,7 +168,7 @@
     },
     {
       "id": "11",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto11.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto12.png",
       "titulo": "El campesino <br> venezolano <br> que ha sido <br> discriminado",
       "nombreVenezolano":"Pedro García",
       "actividad":"Campesino",
@@ -183,7 +183,7 @@
     },
     {
       "id": "12",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto12.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto13.png",
       "titulo": "La abogada <br> venezolana  <br> que no ha <br> logrado ejerce",
       "nombreVenezolano":"Nazare <br> Guevara",
       "actividad":"abogada",
@@ -199,7 +199,7 @@
     },
     {
       "id": "13",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto13.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto14.png",
       "titulo": "El vendedor<br> ambulante<br> que fue<br> asesinado",
       "nombreVenezolano":"Rafael <br>  Gonzalez",
       "actividad":"Cuidador de motos",
@@ -214,7 +214,7 @@
     },
     {
       "id": "14",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto14.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto15.png",
       "titulo": "la <br> emprendedora <br> que ha <br> logrado <br> subsistir por <br> redes",
       "nombreVenezolano":"Kiara Atria",
       "actividad":"Emprendedora",
@@ -229,7 +229,7 @@
     },
     {
       "id": "15",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto15.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto16.png",
       "titulo": "Más de 12 <br> horas al día <br> como mesero",
       "nombreVenezolano":"Carlos <br> Gutiérrez",
       "actividad":"Mesero",
@@ -244,7 +244,7 @@
     },
     {
       "id": "16",
-      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/foto17.png?90",
+      "foto": "https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/notas/foto17.png",
       "titulo": "Las <br> preocupaciones <br> de un estilista <br> sin papeles",
       "nombreVenezolano":"José Duque",
       "actividad":"Estilista",
