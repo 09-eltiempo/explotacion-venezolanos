@@ -1,7 +1,13 @@
+
+/*--<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes tres_puntos" data-aos="fade-up-left" data-aos-duration="1500">--*/
+
+
+
+/*--redes 2  <img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">--*/
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?04234234';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?0424444234d';
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -33,14 +39,20 @@ let redesSociales = document.querySelector(".centrar_redes");
 redesSociales.innerHTML = `
 
 					<div class="contenido_redes_sociales">
-						<a href="https://www.facebook.com/eltiempo/" target="blank">
+						<a style="cursor:pointer;" class="cursor_p" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes quitar_espacio" data-aos="fade-up-left" data-aos-duration="700">
 						</a>
-						<a href="https://twitter.com/ELTIEMPO" target="blank">
+						<a style="cursor:pointer; text-decoration: none;" class="cursor_p" href="https://twitter.com/intent/tweet?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681">
 							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1000">
 						</a>
-						<a href="#"><img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1300"></a>
-						<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes tres_puntos" data-aos="fade-up-left" data-aos-duration="1500">
+
+						<a class="esconder_desktop_ecqnisp" style="cursor:pointer" href="https://api.whatsapp.com/send?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681" data-action="share/whatsapp/share">
+						<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1300">
+						</a>
+
+	
+
+						<img src=""   alt="" class=" tres_puntos">
 
 						<div class="redes_desplegable">
 							<a href="https://www.facebook.com/eltiempo/" target="blank">
@@ -88,7 +100,7 @@ redesSociales.innerHTML = `
 						<figure>
 							<h2 class="titular_hexagono">${myData.autores[i].titulo}</h2>
 							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-titular-5.svg?56" class="hexagonos frontal   hexagono-resposive-frontal">
-							<div class="dejar-estatico trasera">
+							<div class="dejar-estatico trasera" id="${i}">
 								<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56" class="hexagonos frontal hexagono-resposive-atras">
 								<div class="contenido_informacion">
 									<center><img src="${myData.autores[i].foto}" class="hexagonos frontal imagen-autor"></center>
@@ -115,47 +127,49 @@ redesSociales.innerHTML = `
 				atras.attr('src', 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56');										  		
 			}
 			
-			$(".verMas").click(function(e) {
+			$(".trasera").click(function(e) {
 				let id = $(this).attr('id');//console.log(id)
 				console.log("posicion: " + id)
 
 
 
 				//guardar local storage
+				/*
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
 				localStorage.setItem('posicionNota', JSON.stringify(clicks));
+				*/
 
 
 
 				let elemento = document.getElementById(id);//cojer el div
 
-				let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
+				//let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
 				//var elemento = $(this).addClass("carlos");
-				padre.classList.add('dejar-estatico');
-				console.log(padre);
+				//padre.classList.add('dejar-estatico');
+				//console.log(padre);
 
 				
 
 				if(id == 0){
 
-						window.open("https://pre.eltiempo.com/probando/las-barreras-de-domiciliarios-constructores-y-mecanicos-10217", "_blank");
+						window.location.href = "https://www.eltiempo.com/justicia/investigacion/las-barreras-de-domiciliarios-constructores-y-mecanicos-venezolanos-en-colombia-para-acceder-a-trabajos-dignos-3449683";
 					
 				}else if(id == 2){
 
-						window.open("https://pre.eltiempo.com/opinion/la-migracion-venezolana-en-colombia-que-ha-sido-victima-y-eslabon-de-la-criminalidad-10218", "_blank");
+						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-migracion-venezolana-en-colombia-que-ha-sido-victima-y-eslabon-de-la-criminalidad-3449684";
 
 				}else if(id == 4){
 
-						window.open("https://pre.eltiempo.com/opinion/las-luchas-de-una-madre-venezolana-por-vender-en-un-parque-de-cucuta-10219", "_blank");
+						window.location.href = "https://www.eltiempo.com/colombia/otras-ciudades/las-luchas-de-una-madre-venezolana-por-vender-en-un-parque-de-cucuta-si-no-marcas-tu-espacio-te-lo-quitan-3449686";
 
 				}else if(id == 6){
 
-						window.open("https://pre.eltiempo.com/opinion/la-artista-escenica-que-ha-intentado-reinventar-10221", "_blank");
+						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-artista-escenica-venezolana-que-ha-intentado-reinventar-su-oficio-para-vivir-de-forma-digna-en-colombia-3449687";
 				
 				}else if(id == 13){
 
-						window.open("https://pre.eltiempo.com/opinion/el-cuidador-de-motos-venezolano-que-fue-asesinado-por-las-disidencias-10223", "_blank");
+						window.location.href = "https://www.eltiempo.com/colombia/cali/el-cuidador-de-motos-venezolano-que-fue-asesinado-por-las-disidencias-mi-padre-buscaba-trabajar-de-forma-digna-3449688";
 
 				}else{
 
@@ -209,15 +223,22 @@ redesSociales.innerHTML = `
 														<div class="centrar_redes bajar_redes_z">
 															<hr class="linea_divisora_red">
 															<div class="contenido_redes_sociales redes_mobile">
-																<a href="https://www.facebook.com/eltiempo/" target="blank">
+																<a style="cursor:pointer;" class="cursor_p" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">
 																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
 																</a>
-																<a href="https://twitter.com/ELTIEMPO" target="blank">
+																<a style="cursor:pointer; text-decoration: none;" class="cursor_p" href="https://twitter.com/intent/tweet?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681">
 																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
 																</a>
-																<a href="#"><img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile"></a>
+																<a class="esconder_desktop_ecqnisp" style="cursor:pointer" href="https://api.whatsapp.com/send?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681" data-action="share/whatsapp/share">
+																<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile">
+																</a>
 																
-																<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-puntos.svg"   alt="" class="icono_redes redes_movile tamano-icon puntos2">
+
+																<img src=""   alt="" class=" tres_puntos">
+
+																
+
+
 																<div class="red_adicional">
 																	<a href="https://twitter.com/ELTIEMPO" target="blank">
 																		<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt=""  class="icono_redes redes_movile  left_movile">
@@ -258,6 +279,7 @@ redesSociales.innerHTML = `
 		}
 
 
+/*
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 		//console.log(clicks[0]);
@@ -270,6 +292,7 @@ redesSociales.innerHTML = `
 			$(`#${ clicks[i] }`).parent().parent().parent().addClass('dejar-estatico')
 		}
 		//LOCAL STORAGE CARGA
+		*/
 
 
 			

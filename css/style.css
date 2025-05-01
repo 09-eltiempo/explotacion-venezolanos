@@ -118,12 +118,29 @@ figure{
     float: left;
 }
 
+.linea_divisora_interna{
+
+    display: none;
+}
+
 .linea_divisora {
     width: 100%;
     height: 1px;
     background-color: #000;
     border: none;
     margin: 20px 0px;
+}
+
+.subtitulo_nota2 {
+    font-family: "kohinoor";
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    width: 100%;
+    margin: 40px auto 19px auto;
+    color: #000;
+    font-size: 20px;
+    padding: 0px 0px;
 }
 
 .linea_divisora_interna {
@@ -139,8 +156,11 @@ figure{
     font-style: italic;
     font-weight: 300;
     font-stretch: normal;
-    font-size: 23px;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 20px;
+    width: 77%;
+    margin: 0px auto 20px auto;
 }
 
 #articulo_VerMas{
@@ -188,15 +208,23 @@ figure{
     line-height: 27px;
 }
 
+.contenidedor_trust_project{
+
+    width: 100%;
+    max-width: 1200px;
+
+}
+
 .subtitulo_nota {
     font-family: "kohinoor";
     font-style: normal;
     font-weight: 500;
     font-stretch: normal;
-    width: 523px;
+    width: 100%;
     margin: 40px auto 19px auto;
     color: #000;
     font-size: 20px;
+    padding: 0px 25px;
 }
 
 .boton_ver_mas:hover{
@@ -315,11 +343,13 @@ figure .trasera {
 .esconder_desktop{
   display: none;
 }
+
 .centrar_redes {
     width: auto;
-    margin: 9px auto 62px auto;
+    margin: 22px auto 18px auto;
     display: table;
 }
+
 .ilustracion_movile{
 
   display: none;
@@ -383,7 +413,9 @@ figure .trasera {
     font-stretch: normal;
     margin: 0px auto 50px auto;
     line-height: 36px;
+    display: none;
 }
+
 .hexagonos {
     width: 300px;
 }
@@ -561,11 +593,11 @@ figure .trasera {
     font-family: 'KohinoorTelugu-Medium';
     font-size: 17px;
     text-align: center;
-    margin-bottom: 1px;
+    margin-bottom: 7px;
     line-height: 23px;
 }
 .contenido_footer {
-    width: 400px;
+    width: 1200px;
     display: table;
     margin: 160px auto 0 auto;
 }
@@ -745,6 +777,30 @@ figure .trasera {
     cursor: pointer;
     display: none;
 }
+
+
+
+.reducir_parrafo {
+    width: 100%;
+    max-width: 437px;
+    margin: 0px auto 25px auto;
+}
+
+.base_tre_puntos {
+    width: auto;
+    display: table;
+    margin: 0px auto 50px auto;
+}
+
+.circulo {
+    width: 11px;
+    height: 11px;
+    background-color: #000;
+    float: left;
+    margin: 0px 7px;
+    border-radius: 37%;
+}
+
 
 @media (max-width: 1470px){
 
@@ -950,6 +1006,18 @@ figure {
         margin: 0px auto 50px auto;
     }
 
+}
+
+
+.base_decorador_creditos {
+    width: auto;
+    display: table;
+    margin: 0px auto 26px auto;
+}
+
+.bajar_publicacion{
+
+    margin-top: 70px;
 }
 
 @media (max-width: 650px) {
