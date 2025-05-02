@@ -127,26 +127,29 @@ redesSociales.innerHTML = `
 				atras.attr('src', 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/hexagono-autor-4.svg?56');										  		
 			}
 			
-			$(".trasera").click(function(e) {
+
+			$(".verMas").click(function(e) {
 				let id = $(this).attr('id');//console.log(id)
 				console.log("posicion: " + id)
 
 
 
 				//guardar local storage
+				
 				/*
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
-				localStorage.setItem('posicionNota', JSON.stringify(clicks));
+				localStorage.setItem( 'posicionNota', JSON.stringify(clicks) );
 				*/
+				
 
 
 
 				let elemento = document.getElementById(id);//cojer el div
 
-				//let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
+				let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
 				//var elemento = $(this).addClass("carlos");
-				//padre.classList.add('dejar-estatico');
+				padre.classList.add('dejar-estatico');
 				//console.log(padre);
 
 				
@@ -279,20 +282,25 @@ redesSociales.innerHTML = `
 		}
 
 
-/*
+
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
-		//console.log(clicks[0]);
+		console.log(clicks[0]);
 
 		
 
+		/*
 		for(let i = 0; i < clicks.length; i++){
 
 			console.log(clicks[i])
 			$(`#${ clicks[i] }`).parent().parent().parent().addClass('dejar-estatico')
 		}
-		//LOCAL STORAGE CARGA
 		*/
+
+
+
+		//LOCAL STORAGE CARGA
+		
 
 
 			
