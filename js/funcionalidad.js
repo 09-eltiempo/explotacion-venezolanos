@@ -129,13 +129,13 @@ redesSociales.innerHTML = `
 			
 
 			$(".verMas").click(function(e) {
+
 				let id = $(this).attr('id');//console.log(id)
 				console.log("posicion: " + id)
 
 
 
 				//guardar local storage
-				
 				/*
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
@@ -147,11 +147,24 @@ redesSociales.innerHTML = `
 
 				let elemento = document.getElementById(id);//cojer el div
 
-				let padre = elemento.parentElement.parentElement.parentElement;//cojer el padre
+				console.log(elemento)
+
+				let padre = elemento.parentElement.parentElement;//cojer el padre
 				//var elemento = $(this).addClass("carlos");
 				padre.classList.add('dejar-estatico');
 				//console.log(padre);
 
+				ilustracion_movile.style.marginTop = '50px';
+				contenido_principal.style.display = "none";
+				body.classList.add('fondo_body');
+
+				
+				contenido_articulo.style.display  = "block";
+
+				var elmnt = document.querySelector(".base-articulo-completo");
+					var x = elmnt.scrollLeft;
+					var y = elmnt.scrollTop = 0;
+					//console.log(y);
 				
 
 				if(id == 0){
@@ -179,17 +192,7 @@ redesSociales.innerHTML = `
 
 					
 
-					ilustracion_movile.style.marginTop = '50px';
-					contenido_principal.style.display = "none";
-					body.classList.add('fondo_body');
-
-					
-					contenido_articulo.style.display  = "block";
-
-					var elmnt = document.querySelector(".base-articulo-completo");
-						var x = elmnt.scrollLeft;
-						var y = elmnt.scrollTop = 0;
-						//console.log(y);
+				
 					
 
 					if($(window).width() < '600') {
@@ -255,12 +258,14 @@ redesSociales.innerHTML = `
 															</div>
 														</div>	`;
 
+														/*
 							let puntos = document.querySelector(".puntos2");
 							puntos.addEventListener("click", function(){
 								document.querySelector(".red_adicional").style.display = "block";
 								document.querySelector(".flecha_atras").style.display  = "block";
 								puntos.style.display = "none";
 							});
+							*/
 
 							let ocultar = document.querySelector(".flecha_atras");
 							ocultar.addEventListener("click", function(){
@@ -282,24 +287,20 @@ redesSociales.innerHTML = `
 		}
 
 
-
+/*
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
-		console.log(clicks[0]);
+		//console.log(clicks[0]);
 
 		
-
-		/*
+		
 		for(let i = 0; i < clicks.length; i++){
 
 			console.log(clicks[i])
 			$(`#${ clicks[i] }`).parent().parent().parent().addClass('dejar-estatico')
 		}
-		*/
-
-
-
 		//LOCAL STORAGE CARGA
+		*/
 		
 
 
