@@ -7,7 +7,9 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?07jj444234456';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?07jj446666';
+
+
 let contenido = document.querySelector(".seccion");
 
 /*------descripcion inicial-----------*/
@@ -106,7 +108,7 @@ redesSociales.innerHTML = `
 									<center><img src="${myData.autores[i].foto}" class="hexagonos frontal imagen-autor"></center>
 									<h3 class="Nombre-Autor">${myData.autores[i].nombreVenezolano}</h3>
 									<p class="descripcion_articulo">${myData.autores[i].actividad}</p>
-									<div id="${i}" class="verMas">
+									<div class="verMas">
 										<hr class="linea-divisora">
 										<a><p class="leer_mas">LEER <br> <span class="signo">+</span></p></a>
 									</div>
@@ -128,7 +130,7 @@ redesSociales.innerHTML = `
 			}
 			
 
-			$(".verMas").click(function(e) {
+			$(".trasera").click(function(e) {
 
 				let id = $(this).attr('id');//console.log(id)
 				console.log("posicion: " + id)
@@ -136,44 +138,30 @@ redesSociales.innerHTML = `
 
 
 				//guardar local storage
-				/*
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
 				localStorage.setItem( 'posicionNota', JSON.stringify(clicks) );
-				*/
 				
-
-
-
+	
+				
 				let elemento = document.getElementById(id);//cojer el div
-
-				console.log(elemento)
-
-				let padre = elemento.parentElement.parentElement;//cojer el padre
-				//var elemento = $(this).addClass("carlos");
+				let padre = elemento.parentElement;//cojer el padre
 				padre.classList.add('dejar-estatico');
-				//console.log(padre);
+
 
 				ilustracion_movile.style.marginTop = '50px';
 				contenido_principal.style.display = "none";
 				body.classList.add('fondo_body');
 
 				
-				contenido_articulo.style.display  = "block";
-
-				var elmnt = document.querySelector(".base-articulo-completo");
-					var x = elmnt.scrollLeft;
-					var y = elmnt.scrollTop = 0;
-					//console.log(y);
-				
-
+		
 				if(id == 0){
 
 						window.location.href = "https://www.eltiempo.com/justicia/investigacion/las-barreras-de-domiciliarios-constructores-y-mecanicos-venezolanos-en-colombia-para-acceder-a-trabajos-dignos-3449683";
 					
 				}else if(id == 2){
 
-						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-migracion-venezolana-en-colombia-que-ha-sido-victima-y-eslabon-de-la-criminalidad-3449684";
+						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-artista-escenica-venezolana-que-ha-intentado-reinventar-su-oficio-para-vivir-de-forma-digna-en-colombia-3449687";
 
 				}else if(id == 4){
 
@@ -181,7 +169,9 @@ redesSociales.innerHTML = `
 
 				}else if(id == 6){
 
-						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-artista-escenica-venezolana-que-ha-intentado-reinventar-su-oficio-para-vivir-de-forma-digna-en-colombia-3449687";
+						window.location.href = "https://www.eltiempo.com/justicia/investigacion/la-migracion-venezolana-en-colombia-que-ha-sido-victima-y-eslabon-de-la-criminalidad-3449684";
+
+						
 				
 				}else if(id == 13){
 
@@ -190,7 +180,13 @@ redesSociales.innerHTML = `
 				}else{
 
 
-					
+					contenido_articulo.style.display  = "block";
+
+					var elmnt = document.querySelector(".base-articulo-completo");
+					var x = elmnt.scrollLeft;
+					var y = elmnt.scrollTop = 0;
+						//console.log(y);
+				
 
 				
 					
@@ -214,7 +210,7 @@ redesSociales.innerHTML = `
 							descripcion.innerHTML  =  myData.autores[i].descripcion;
 							articulo.innerHTML     =  ` 
 
-							<div class="base_textos esconder_desktop" id="titulo">
+							<div class="base_textos esconder_mobile" id="titulo">
 								<h1 class="titulo_articulo">${myData.autores[i].titulo}</h1>
 								<h2 class="autor ancho_caja">${myData.autores[i].nombre}</h2>
 								<p class="descripcion2 ancho_caja">${myData.autores[i].descripcion}</p>
@@ -286,21 +282,20 @@ redesSociales.innerHTML = `
 
 		}
 
-
-/*
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
-		//console.log(clicks[0]);
+	
 
 		
 		
 		for(let i = 0; i < clicks.length; i++){
 
 			console.log(clicks[i])
-			$(`#${ clicks[i] }`).parent().parent().parent().addClass('dejar-estatico')
+			$(`#${ clicks[i] }`).parent().addClass('dejar-estatico')
 		}
 		//LOCAL STORAGE CARGA
-		*/
+		
+		
 		
 
 

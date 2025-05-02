@@ -206,8 +206,52 @@
 
 
 
+.frase{
+
+    font-style: italic;
+}
+
+.contenedor_foto {
+    width: 100%;
+    max-width: 900px;
+    display: table;
+    margin: 22px auto 50px auto;
+}
+
+.esconder_mobile{
+
+    display: none;;
+}
+
+.foto_nota_ext {
+    width: 100%;
+}
+
+.texto_credito_foto {
+    font-family: "kohinoor";
+    font-style: normal;
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 
 @media(max-width: 650px){
+
+    .texto_credito_foto {
+        font-family: "kohinoor";
+        font-style: normal;
+        padding: 24px 39px 10px 39px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
+    .contenedor_foto {
+        width: 100%;
+        max-width: 900px;
+        display: table;
+        margin: 3px auto 24px auto;
+    }
 
 
 .linea_divisora {
@@ -232,6 +276,19 @@
 .contenedor_texto {
     width: 100%;
     padding: 0px 40px;
+}
+
+
+
+.esconder_mobile{
+
+    display: block;
+}
+
+
+.esconder_desktop{
+
+    display: none;
 }
 
 }

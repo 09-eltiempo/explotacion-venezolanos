@@ -114,6 +114,7 @@ figure{
     margin-top: 4px;
 }
 
+
 .boton_ver_menos span {
     float: left;
 }
@@ -577,12 +578,10 @@ figure .trasera {
     font-family: aglet-slab, sans-serif;
     font-weight: 400;
     font-style: normal;
-
     color: #000;
     font-size: 20px;
     line-height: 19px;
-
-    margin: 5px 0px 6px 0px;
+    margin: 9px 0px 6px 0px;
 }
 .descripcion_articulo {
     font-family: aglet-slab, sans-serif;
@@ -747,14 +746,12 @@ figure .trasera {
     margin-left: 21px;
 }
 .titulo_articulo {
-
-    font-size: 41px;
+    font-size: 29px;
     text-align: right;
     width: auto;
-    line-height: 41px;
-
+    line-height: 33px;
     font-family: aglet-slab, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
 }
 .autor {
@@ -762,17 +759,20 @@ figure .trasera {
     margin-top: 23px;
     display: block;
     text-align: right;
-
-   font-family: aglet-slab, sans-serif;
-   font-weight: 400;
-   font-style: normal;
-
+    font-family: aglet-slab, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    right: 73px;
+    bottom: 0;
 }
 .base_textos {
     width: auto;
-    height: auto;
+    height: 397px;
     float: left;
     padding-right: 72px;
+    /* background-color: red; */
+    position: relative;
 }
 .base_divisor {
     width: 22px;
@@ -914,6 +914,11 @@ figure .trasera {
 }
 
 
+.frase{
+
+    font-style: italic;
+}
+
 
 
 @media (max-width: 1470px){
@@ -972,7 +977,7 @@ img.hexagonos.frontal.hexagono-resposive-atras {
     color: #000;
     font-size: 17px;
     line-height: 19px;
-    margin: -1px 0px 2px 0px;
+    margin: 9px 0px 2px 0px;
 }
 .descripcion_articulo {
     font-family: aglet-slab, sans-serif;
@@ -1548,6 +1553,7 @@ figure .trasera {
     float: right;
     padding-right: 33px;
     box-sizing: border-box;
+    height: auto;
 }
 
 .titulo_articulo {
@@ -1566,17 +1572,18 @@ figure .trasera {
     font-style: normal;
     font-weight: 400;
     margin-top: 17px;
+    position: relative;
 }
-
-    .descripcion2 {
-        text-align: left;
-        margin-bottom: 30px;
-        font-family: aglet-slab, sans-serif;
-        font-style: italic;
-        font-weight: 300;
-        text-align: left;
-        margin-bottom: 8px;
-    }
+.descripcion2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: aglet-slab, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 3px;
+}
 
 .parrafos {
     position: relative;
