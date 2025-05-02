@@ -7,7 +7,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?07jj446666';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?07jj88867866';
 
 
 let contenido = document.querySelector(".seccion");
@@ -138,15 +138,17 @@ redesSociales.innerHTML = `
 
 
 				//guardar local storage
+				/*
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
 				localStorage.setItem( 'posicionNota', JSON.stringify(clicks) );
+				*/
 				
 	
 				
 				let elemento = document.getElementById(id);//cojer el div
 				let padre = elemento.parentElement;//cojer el padre
-				padre.classList.add('dejar-estatico');
+				//padre.classList.add('dejar-estatico');
 
 
 				ilustracion_movile.style.marginTop = '50px';
@@ -282,11 +284,11 @@ redesSociales.innerHTML = `
 
 		}
 
+
+		/*
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 	
-
-		
 		
 		for(let i = 0; i < clicks.length; i++){
 
@@ -294,6 +296,7 @@ redesSociales.innerHTML = `
 			$(`#${ clicks[i] }`).parent().addClass('dejar-estatico')
 		}
 		//LOCAL STORAGE CARGA
+		*/
 		
 		
 		

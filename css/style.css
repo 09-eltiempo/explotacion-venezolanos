@@ -1573,6 +1573,7 @@ figure .trasera {
     font-weight: 400;
     margin-top: 17px;
     position: relative;
+    right: 0;
 }
 .descripcion2 {
     text-align: left;
