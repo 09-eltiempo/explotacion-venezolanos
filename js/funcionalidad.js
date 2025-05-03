@@ -7,7 +7,7 @@
 $(document).ready(function(){
 
 
-const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?07jj88867866';
+const jsonURL = 'https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/data/data.json?0646666456';
 
 
 let contenido = document.querySelector(".seccion");
@@ -45,7 +45,7 @@ redesSociales.innerHTML = `
 							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes quitar_espacio" data-aos="fade-up-left" data-aos-duration="700">
 						</a>
 						<a style="cursor:pointer; text-decoration: none;" class="cursor_p" href="https://twitter.com/intent/tweet?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681">
-							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes" data-aos="fade-up-left" data-aos-duration="1000">
+							<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/red-x2.svg?90"   alt="" class="icono_redes twitter" data-aos="fade-up-left" data-aos-duration="1000">
 						</a>
 
 						<a class="esconder_desktop_ecqnisp" style="cursor:pointer" href="https://api.whatsapp.com/send?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681" data-action="share/whatsapp/share">
@@ -136,22 +136,25 @@ redesSociales.innerHTML = `
 				console.log("posicion: " + id)
 
 
+				$(window).scrollTop(0)
+
+				console.log( $(window).scrollTop(0) )
 
 				//guardar local storage
-				/*
+				
 				let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 				clicks.push(id);
 				localStorage.setItem( 'posicionNota', JSON.stringify(clicks) );
-				*/
+				
 				
 	
 				
 				let elemento = document.getElementById(id);//cojer el div
 				let padre = elemento.parentElement;//cojer el padre
-				//padre.classList.add('dejar-estatico');
+			    padre.classList.add('dejar-estatico');
 
 
-				ilustracion_movile.style.marginTop = '50px';
+				ilustracion_movile.style.marginTop = '0px';
 				contenido_principal.style.display = "none";
 				body.classList.add('fondo_body');
 
@@ -214,8 +217,11 @@ redesSociales.innerHTML = `
 
 							<div class="base_textos esconder_mobile" id="titulo">
 								<h1 class="titulo_articulo">${myData.autores[i].titulo}</h1>
-								<h2 class="autor ancho_caja">${myData.autores[i].nombre}</h2>
-								<p class="descripcion2 ancho_caja">${myData.autores[i].descripcion}</p>
+
+								<div class="base_credito_chky">
+									<h2 class="autor ancho_caja">${myData.autores[i].nombre}</h2>
+									<p class="descripcion2 ancho_caja">${myData.autores[i].descripcion}</p>
+								</div>
 							</div>
 
 							<p class="sumarioNota">${myData.autores[i].sumarioNota} </p>
@@ -231,7 +237,7 @@ redesSociales.innerHTML = `
 																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-facebook.svg" alt="" class="icono_redes redes_movile margen-f tamano-icon" >
 																</a>
 																<a style="cursor:pointer; text-decoration: none;" class="cursor_p" href="https://twitter.com/intent/tweet?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681">
-																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-twiter.svg"   alt="" class="icono_redes redes_movile">
+																	<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/red-x2.svg?90"   alt="" class="icono_redes redes_movile twitter2">
 																</a>
 																<a class="esconder_desktop_ecqnisp" style="cursor:pointer" href="https://api.whatsapp.com/send?text=https://www.eltiempo.com/justicia/investigacion/explotacion-laboral-la-tragedia-invisibilizada-de-los-migrantes-venezolanos-en-colombia-3449681" data-action="share/whatsapp/share">
 																<img src="https://www.eltiempo.com/infografias/2025/04/Explotacion_laboral_venezolanos/img/icono-whatsapp.svg" alt="" class="icono_redes redes_movile">
@@ -285,7 +291,7 @@ redesSociales.innerHTML = `
 		}
 
 
-		/*
+		
 		//LOCAL STORAGE CARGA
 		let clicks = JSON.parse(localStorage.getItem('posicionNota')) || [];
 	
@@ -296,7 +302,7 @@ redesSociales.innerHTML = `
 			$(`#${ clicks[i] }`).parent().addClass('dejar-estatico')
 		}
 		//LOCAL STORAGE CARGA
-		*/
+		
 		
 		
 		
@@ -358,3 +364,33 @@ $(".boton_ver_menos").click(function(event) {
 
 
   	
+$(".desplegar_desktop").click(function(event){
+
+		$(".credito_desktop_d, .contenidedor_trust_project").css('display', 'block');
+		$(".linea_footer").css('display', 'none');
+})
+
+
+$(".icono_cerrar_desktop").click(function(event){
+
+	$(".credito_desktop_d, .contenidedor_trust_project").css('display', 'none');
+	$(".linea_footer").css('display', 'block');
+
+})
+
+
+/*----mobile---*/
+$(".desplegar_mobile").click(function(event){
+
+
+	$(".footer-mobile, .contenidedor_trust_project").css('display','table');
+	$(".desplegar_credito").css('display','none');
+
+})
+
+$(".icono_cerrar_mobile").click(function(event){
+
+	$(".footer-mobile, .contenidedor_trust_project").css('display','none');
+	$(".desplegar_credito").css('display','table');
+
+})

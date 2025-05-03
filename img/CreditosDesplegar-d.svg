@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="353" height="27.179" viewBox="0 0 353 27.179">
+  <g id="Group_410" data-name="Group 410" transform="translate(-782.924 -3611.535)">
+    <g id="Group_189" data-name="Group 189" transform="translate(-2.076 -3861.768)">
+      <line id="Line_82" data-name="Line 82" x2="143.408" transform="translate(994.092 7486.893)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_83" data-name="Line 83" x2="141.34" transform="translate(785.5 7486.893)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+    <g id="Group_370" data-name="Group 370" transform="translate(30.968 -2090.979)">
+      <g id="Group_382" data-name="Group 382" transform="translate(914.191 5703.014)">
+        <g id="Polygon_5" data-name="Polygon 5" transform="translate(23.859 21.514) rotate(180)">
+          <path d="M 16.82840156555176 12.56590270996094 L 0.9447515606880188 12.56590270996094 L 8.886576652526855 0.8890713453292847 L 16.82840156555176 12.56590270996094 Z" stroke="none"/>
+          <path d="M 8.886576652526855 1.778135299682617 L 1.889503479003906 12.06590270996094 L 15.8836498260498 12.06590270996094 L 8.886576652526855 1.778135299682617 M 8.886576652526855 1.9073486328125e-06 L 17.77315711975098 13.06590270996094 L -3.814697265625e-06 13.06590270996094 L 8.886576652526855 1.9073486328125e-06 Z" stroke="none" fill="#000"/>
+        </g>
+        <path id="Path_391" data-name="Path 391" d="M22.671,0H7.557L0,13.09,7.557,26.179H22.671L30.228,13.09Z" transform="translate(30.228 26.179) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

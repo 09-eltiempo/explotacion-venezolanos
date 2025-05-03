@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="284.091" height="22.258" viewBox="0 0 284.091 22.258">
+  <g id="Group_409" data-name="Group 409" transform="translate(-45.454 -3065.5)">
+    <g id="Group_370" data-name="Group 370" transform="translate(-739.009 -2596.397)">
+      <g id="Group_382" data-name="Group 382" transform="translate(0 -40.617)">
+        <g id="Polygon_5" data-name="Polygon 5" transform="translate(933.565 5720.483) rotate(180)">
+          <path d="M 13.48718738555908 10.109619140625 L 0.9447563290596008 10.109619140625 L 7.215971946716309 0.8890691995620728 L 13.48718738555908 10.109619140625 Z" stroke="none"/>
+          <path d="M 7.215971946716309 1.778134346008301 L 1.889507293701172 9.609619140625 L 12.54243659973145 9.609619140625 L 7.215971946716309 1.778134346008301 M 7.215971946716309 0 L 14.43194198608398 10.609619140625 L 1.9073486328125e-06 10.609619140625 L 7.215971946716309 0 Z" stroke="none" fill="#000"/>
+        </g>
+        <path id="Path_391" data-name="Path 391" d="M18.409,0H6.136L0,10.629,6.136,21.258H18.409l6.136-10.629Z" transform="translate(938.736 5724.271) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_371" data-name="Group 371" transform="translate(-739.546 -4407.669)">
+      <line id="Line_82" data-name="Line 82" x2="115.334" transform="translate(953.257 7483.668)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="Line_83" data-name="Line 83" x2="113.671" transform="translate(785.5 7483.668)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

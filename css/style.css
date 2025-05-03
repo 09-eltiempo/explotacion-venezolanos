@@ -108,6 +108,8 @@ figure{
     display: table;
 }
 
+
+
 .flecha_abajo {
     width: 14px;
     margin-right: 5px;
@@ -207,6 +209,11 @@ figure{
     font-weight: 300;
     font-stretch: normal;
     line-height: 27px;
+    display: none;
+}
+
+.descripcion3 {
+    display: none;
 }
 
 .contenidedor_trust_project {
@@ -377,6 +384,7 @@ figure{
     font-weight: 300;
     font-stretch: normal;
     line-height: 27px;
+    /* font-family: "aglet-slab"; */
 }
 
 .video_youtube_notaP {
@@ -507,11 +515,31 @@ figure .trasera {
     width: 100%;
 }
 
+.twitter {
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.twitter2 {
+    width: 18px;
+    position: relative;
+    top: 5px;
+}
+
 .header2 {
     width: 900px;
     display: table;
     margin: 145px auto 40px auto;
 }
+
+.base_credito_chky {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 72px;
+}
+
 .descripcion {
     width: 865px;
     text-align: center;
@@ -705,7 +733,7 @@ figure .trasera {
 .contenido_footer {
     width: 1200px;
     display: table;
-    margin: 160px auto 0 auto;
+    margin: 0px auto 0 auto;
 }
 
 .fuente_light{
@@ -762,8 +790,8 @@ figure .trasera {
     font-family: aglet-slab, sans-serif;
     font-weight: 400;
     font-style: normal;
-    position: absolute;
-    right: 73px;
+    position: relative;
+    right: 0;
     bottom: 0;
 }
 .base_textos {
@@ -891,6 +919,8 @@ figure .trasera {
     width: 100%;
     max-width: 437px;
     margin: 0px auto 25px auto;
+    font-family: "aglet-slab";
+    font-weight: 400;
 }
 
 .base_tre_puntos {
@@ -920,6 +950,39 @@ figure .trasera {
 }
 
 
+
+.credito_nombre {
+    margin: 172px auto 0px auto;
+}
+
+.contenido_footer, .contenidedor_trust_project{
+
+    display: none;
+}
+
+
+.credito_desplegar {
+    cursor: pointer;
+    margin: auto;
+}
+
+.base_icono_cerrar{
+
+    width: 100%;
+    display: table;
+}
+
+.base_icono_cerrar {
+    width: 100%;
+    display: table;
+    margin: auto;
+}
+
+.icono_cerrar_desktop {
+    padding: 21px 0px;
+    cursor: pointer;
+    margin: auto;
+}
 
 @media (max-width: 1470px){
 
@@ -1139,13 +1202,52 @@ figure {
     font-style: italic;
 }
 
-
-
+.contenedor_despegable_footer {
+    width: 100%;
+    display: table;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 
 
 @media (max-width: 650px) {
 
+
+
+    .credito_desplegar {
+        margin: auto;
+    }
+
+    .credito_nombre {
+        margin: 125px auto 0px auto;
+    }
+
+    .contenedor_despegable_footer {
+       
+        height: 56px;
+    }
+
+    .autor_credito {
+        font-size: 16px;
+        width: 523px;
+        margin: 0px auto 0px auto;
+        display: block;
+        font-stretch: normal;
+        line-height: 27px;
+        font-family: aglet-slab, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 53px;
+    }
+
+    .base_credito_chky {
+        width: auto;
+        position: relative;
+        bottom: 0;
+        right: 0px;
+    }
+    
 
 .imagen_migrantes_lts {
     width: 100%;
@@ -1390,13 +1492,14 @@ figure .trasera {
   display: none;
 }
 .contenido_footer.footer-mobile {
-    display: block;
+   
     width: 300px;
-    margin: 120px auto 0 auto;
+    margin: 0px auto 0 auto;
 }
 
 .linea_footer {
     width: 100%;
+    margin: 0px auto 25px auto;
 }
 
 .redes_desplegable {
@@ -1415,7 +1518,7 @@ figure .trasera {
 .contenido_articulo {
     width: 100%;
     display: none;
-    margin: 72px auto 0 auto;
+    margin: 3px auto 0 auto;
     padding: 0px 32px;
     box-sizing: border-box;
 }
@@ -1430,27 +1533,28 @@ figure .trasera {
     width: 66px;
     height: auto;
     float: left;
-    position: relative;
+    position: fixed;
+    top: 25px;
 }
-
 .icono_articulo {
-    margin-top: 49px;
+    margin-top: 0px;
     width: 308px;
     margin-left: 43px;
     margin-bottom: 11px;
     float: inherit;
+    padding: 32px 0px 0px 0px;
 }
 
 .seccion-articulo {
-        width: 275px;
-        display: block;
-        float: left;
-        padding: 20px 0px;
-        box-sizing: border-box;
-        margin-left: 0px;
-        float: right;
-        position: relative;
-    }
+    width: 275px;
+    display: block;
+    float: left;
+    padding: 0px 0px 20px 0px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    float: right;
+    position: relative;
+}
 
 .linea_divisora_red {
     display: none;
@@ -1467,25 +1571,25 @@ figure .trasera {
 }
 .icono_redes.redes_movile {
     margin-left: 16px;
-    width: 31px;
+    width: 33px;
 }
-
-    .base-articulo-completo {
-        /* overflow-y: initial; */
-        height: 600px;
-        overflow-x: hidden;
+.base-articulo-completo {
+    /* overflow-y: initial; */
+    height: auto;
+    overflow-x: hidden;
+}
+    .fondo_body {
+        overflow-y: scroll;
     }
-.fondo_body {
-  
-    overflow-y: hidden;
-}
 
-.base_divisor {
-    width: 22px;
-    left: 21px;
-    position: relative;
-    top: 94px;
-}
+    .base_divisor {
+        width: 16px;
+        left: 21px;
+        position: relative;
+        top: 0;
+        z-index: 2;
+        background-color: #ffc95c;
+    }
 
 .cerrar {
     position: absolute;
@@ -1513,10 +1617,12 @@ figure .trasera {
 }
 
 .base_imagen_movile.ilustracion_movile {
-        display: block;
-        padding: 0px;
-        background-color: #ffc95c;
-    }
+    display: block;
+    padding: 13px 0px 0px 0px;
+    background-color: #ffc95c;
+    position: relative;
+    z-index: 0;
+}
 
        .sumarioNota {
         font-size: 18px;
@@ -1540,6 +1646,7 @@ figure .trasera {
 
 .subtitulo_nota {
     width: 100%;
+    padding: 0px 25px 0px 0px;
 }
 
 
@@ -1548,7 +1655,7 @@ figure .trasera {
 }
 
 .base_textos {
-    margin-top: 98px;
+    margin-top: 0px;
     width: 100%;
     float: right;
     padding-right: 33px;
@@ -1557,34 +1664,50 @@ figure .trasera {
 }
 
 .titulo_articulo {
-      font-family: aglet-slab, sans-serif;
+    font-family: aglet-slab, sans-serif;
     font-style: normal;
     font-weight: 200;
     text-align: left;
     font-size: 35px;
     line-height: 36px;
+    margin-bottom: 19px;
 }
 
 .autor {
-    text-align: left;
-    text-align: left;
-    font-family: aglet-slab, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 17px;
-    position: relative;
-    right: 0;
-}
-.descripcion2 {
-    text-align: left;
-    margin-bottom: 30px;
-    font-family: aglet-slab, sans-serif;
-    font-style: italic;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 8px;
-    margin-top: 3px;
-}
+        text-align: left;
+        text-align: left;
+        font-family: aglet-slab, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 17px;
+        position: relative;
+        right: 0;
+        display: none;
+    }
+    .descripcion2 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 8px;
+        margin-top: 3px;
+        display: none;
+    }
+
+
+    .descripcion3 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-family: aglet-slab, sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 8px;
+        margin-top: 0px;
+        display: block;
+    }
 
 .parrafos {
     position: relative;
@@ -1621,18 +1744,65 @@ figure .trasera {
     display: none;
 }
 
+
+.icono_redes.redes_movile.twitter{
+    width: 22px;
+    position: relative;
+    top: 5px;
+}
+
+.icono_redes.redes_movile.twitter2 {
+    width: 21px;
+    position: relative;
+    top: 6px;
+}
+
+.icono_redes.redes_movile.twitter2 {
+        width: 21px;
+        position: relative;
+        top: 6px;
+    }
+
+    .icono_redes.twitter {
+        width: 25px;
+        position: relative;
+        top: 5px;
+    }
+
+    .base_icono_cerrar {
+        width: 100%;
+        display: table;
+        margin: 3px 7px;
+        padding: 10px 0px;
+    }
+
+    .contendor_info_trush {
+        
+        padding-bottom: 19px;
+    }
+
+    .icono_cerrar_mobile {
+        width: 12%;
+    }
+
 }
 
 
 @media (max-width: 385px) {
 
+    .base_imagen_movile.ilustracion_movile {
+        display: block;
+        padding: 0px 0px 0px 0px;
+        background-color: #ffc95c;
+        position: relative;
+    }
 
 
+    .base-articulo-completo {
+        height: auto;
+    }
 
 
-.base-articulo-completo {
-    height: 509px;
-}
 .redes_desplegable {
   
     width: 30px;
@@ -1744,7 +1914,7 @@ figure {
 /*-----------pantalla2-----------*/
 
 .base_textos {
-    margin-top: 73px;
+    margin-top: 0px;
     width: 100%;
     float: right;
 }
@@ -1775,10 +1945,10 @@ figure {
 }
 
 .icono_articulo {
-    margin-top: 24px;
+    margin-top: 0px;
     width: 258px;
     margin-left: 54px;
-    padding-bottom: 19px;
+    padding-bottom: 0px;
 }
 
 .descripcion2 {
@@ -1829,10 +1999,15 @@ figure {
         width: 239px;
     }
 
-.icono_redes.redes_movile {
-    margin-left: 15px;
-    width: 22px;
-}
+    .icono_redes.redes_movile {
+        margin-left: 15px;
+        width: 29px;
+    }
+
+    .icono_redes.redes_movile.twitter2 {
+        width: 18px;
+
+    }
 
 
 .video_youtube_notaP {
@@ -1855,10 +2030,25 @@ figure {
 }
 
 
+.twitter {
+    width: 20px !important;
+    position: relative;
+    top: 5px;
+}
+
+
 }
 
 
 @media (max-width: 365px) {
+
+    .icono_articulo {
+        margin-top: 0px;
+        width: 258px;
+        margin-left: 54px;
+        padding-bottom: 0px;
+        margin-bottom: 7px;
+    }
 
 
 .seccion-articulo {
@@ -1914,12 +2104,12 @@ figure {
 }
 
 /*------------------pantalla 2 ---------------*/
-.base_divisor {
-    width: 22px;
-    left: 24px;
-    position: relative;
-    top: 0px;
-}
+    .base_divisor {
+        width: 22px;
+        left: 24px;
+        position: relative;
+        top: 42px;
+    }
 .cerrar {
     position: absolute;
     width: 41px;
@@ -1966,7 +2156,7 @@ figure {
 
 .icono_redes.redes_movile {
     margin-left: 17px;
-    width: 23px;
+    width: 29px;
 }
 
 #autor16 {
@@ -1975,6 +2165,11 @@ figure {
     top: 1px;
 }
 
+.twitter {
+    width: 20px !important;
+    position: relative;
+    top: 5px;
+}
 
 
 }
@@ -1986,13 +2181,11 @@ figure {
     /* overflow-y: initial; */
     height: 476px;
 }
-
-.seccion-titulo-autor {
-    width: 35px;
-    height: auto;
-    float: left;
+.contenido_redes_sociales {
+    width: auto;
+    display: inline-flex;
+    margin: 2px auto 0 auto;
     position: relative;
-    top: -6px;
 }
 .descripcion {
         font-size: 17px;
@@ -2008,7 +2201,7 @@ figure {
 .contenido_redes_sociales {
     width: auto;
     display: inline-flex;
-    margin: 97px auto 0 auto;
+    margin: -2px auto 0 auto;
     position: relative;
 }
 
@@ -2104,11 +2297,11 @@ figure {
 /*-----------pantalla 2 --------------*/
 
 .icono_articulo {
-    margin-top: 24px;
-    width: 214px;
-    margin-left: 47px;
-    padding-bottom: 7px;
-}
+        margin-top: 0px;
+        width: 214px;
+        margin-left: 47px;
+        padding-bottom: 7px;
+    }
 
 .base_divisor {
     width: 22px;
@@ -2126,12 +2319,12 @@ figure {
     .seccion-articulo {
         width: 198px;
     }
+    .base_textos {
+        margin-top: 0px;
+        width: 100%;
+        float: left;
+    }
 
-.base_textos {
-    margin-top: 41px;
-    width: 100%;
-    float: left;
-}
 .titulo_articulo {
 
     font-family: aglet-slab, sans-serif;
@@ -2204,16 +2397,16 @@ figure {
 
 .base-articulo-completo {
     /* overflow-y: initial; */
-    height: 543px;
+    height: auto;
 }
 
 }
 
 @media (max-width: 405px) and (max-height: 630px){
 
-.base-articulo-completo {
-    height: 461px;
-}
+    .base-articulo-completo {
+        height: auto;
+    }
 
 .base_divisor {
     width: 22px;
@@ -2233,7 +2426,7 @@ figure {
     top: -88px;
 }
 .base-articulo-completo {
-    height: 410px;
+    height: auto;
 }
 
 }
